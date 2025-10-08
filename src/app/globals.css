@@ -1,8 +1,19 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Background Images */
+  --bg-hero: url('/images/background-image-hero.png');
+  --bg-hero-tab: url('/images/background-image-section.png');
+  --bg-button: linear-gradient(
+    91.9deg,
+    #dd0ced -5.47%,
+    #890d8b 24.94%,
+    #701c8f 63.75%,
+    #403b98 96.79%
+  );
 }
 
 @theme inline {
@@ -23,4 +34,21 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background utilities */
+.bg-hero {
+  background-image: var(--bg-hero);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-hero-tab {
+  background-image: var(--bg-hero-tab);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-button {
+  background-image: var(--bg-button);
 }
