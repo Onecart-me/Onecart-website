@@ -1,5 +1,3 @@
-import { Button } from '@/components/GenericButton';
-
 import Image from 'next/image';
 import React from 'react';
 import { IoArrowForward } from 'react-icons/io5';
@@ -16,7 +14,7 @@ const OneCartHero = () => {
           }}
           className=' flex-1 bg-bgButton rounded-2xl'
         >
-          <div className='grid gap-4 md:pt-5'>
+          <div className='grid gap-4 pt-7 md:pt-5'>
             <h5
               style={{ color: '#fff' }}
               className=' grid justify-center mx-auto font-inter font-bold text-white text-center  text-2xl md:text-[40px] w-8/12'
@@ -29,7 +27,7 @@ const OneCartHero = () => {
             >
               For Sharpness & OneSellers
             </p>
-            <span className=' grid justify-center mx-auto mb-1 '>
+            <span className='grid justify-center mx-auto mb-1 '>
               <Image
                 src='/images/hero-zag-image.png'
                 alt='live-stream'
@@ -49,7 +47,7 @@ const OneCartHero = () => {
           </span>
         </div>
         <div className='flex-1 flex flex-col gap-4'>
-          <div className=' grid rounded-2xl  bg-[#FFF2FF80] grid-cols-2'>
+          <div className='flex flex-col-reverse md:grid md:grid-cols-2 bg-[#FFF2FF80] rounded-2xl'>
             <span className=''>
               <Image
                 src='/images/phone-outline.png'
@@ -83,7 +81,7 @@ const OneCartHero = () => {
                 </span>
               </div>
               <div className='relative grid justify-center mx-auto mt-9'>
-                <div className='grid grid-flow-col w-max items-center gap-2'>
+                <div className='grid md:grid-flow-col w-max items-center gap-2'>
                   <span className=''>
                     <Image
                       src='/images/apple-icon.png'
@@ -105,7 +103,7 @@ const OneCartHero = () => {
                   <div>
                     <hr className=' grid justify-center mt-5 mx-auto bg-[#570059] h-1 w-20' />
                   </div>
-                  <div className='grid grid-flow-col w-max items-center mt-5 gap-2'>
+                  <div className='grid md:grid-flow-col w-max items-center mt-5 gap-2'>
                     <span className=''>
                       <Image
                         src='/images/google.png'
@@ -149,7 +147,7 @@ const OneCartHero = () => {
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
-            className='grid grid-cols-2 px-7 bg-heroImageTab bg-no-repeat rounded-3xl'
+            className='flex flex-col-reverse md:grid md:grid-cols-2 px-7 bg-heroImageTab bg-no-repeat rounded-3xl'
           >
             <div className='pt-8'>
               <h5 className='text-[#570059] grid justify-center font-inter text-[32px] font-bold'>
@@ -181,7 +179,6 @@ const OneCartHero = () => {
                 </span>
               </div>
             </div>
-
             <div className='relative mt-10'>
               <Image
                 src='/images/live-broadcast.png'

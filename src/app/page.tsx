@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import HowItWorksTapIn from './(website)/onecart/howItWorksTapIn';
+import HowItWorksTapIn from './(website)/onecart/howitworks/tapInTune';
 import OneCartHero from './(website)/onecart/oneCartHero';
 import OneCartTieUps from './(website)/onecart/oneCartTieUps';
 import WhyOneCart from './(website)/onecart/whyonecart';

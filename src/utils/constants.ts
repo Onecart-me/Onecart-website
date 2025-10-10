@@ -10,7 +10,70 @@ export const NAV_SCHEMA = [
   },
   {
     name: 'Our Team',
+    link: '/our-team',
+  },
+];
+
+export const OUR_TEAM_SCHEMA = [
+  {
+    name: 'Pratik Shetty',
+    role: 'Founder & CEO',
     link: '/',
+    image: '/images/pratik.png',
+  },
+  {
+    name: 'Minakhi Das',
+    role: 'Design Lead',
+    link: '/',
+    image: '/images/minakhi.png',
+  },
+  {
+    name: 'Dhananjay Sharma',
+    role: 'Technical Lead',
+    link: '/our-team',
+    image: '/images/dhan.png',
+  },
+  {
+    name: 'Siddharth Bisht',
+    role: 'Full-Stack Developer',
+    link: '/',
+    image: '/images/sid.png',
+  },
+  {
+    name: 'Swati Raut',
+    role: 'Senior UX/UI Designer ',
+    link: '/',
+    image: '/images/swati.png',
+  },
+  {
+    name: 'Misbah Khalid',
+    role: 'Visual Designer ',
+    link: '/our-team',
+    image: '/images/misbah.png',
+  },
+  {
+    name: 'Preethi Batchali',
+    role: 'UX/UI Designer',
+    link: '/',
+    image: '/images/preethi.png',
+  },
+  {
+    name: 'Asin Honore',
+    role: 'Full-Stack Developer ',
+    link: '/our-story',
+    image: '/images/asin.png',
+  },
+  {
+    name: 'Barisanem Fiiwe',
+    role: 'Full-Stack Developer ',
+    link: '/our-team',
+    image: '/images/barry.png',
+  },
+  {
+    name: 'Usama Ahmed',
+    role: 'Full-Stack Developer ',
+    link: '/our-team',
+    image: '/images/usama.png',
   },
 ];
 // footer schema

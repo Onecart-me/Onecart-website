@@ -1,12 +1,13 @@
 'use client';
 import React, { useState } from 'react';
-import UserDashboard from './userDashboard';
-import BestFinds from './bestFinds';
-import ExclusiveAccess from './exclusiveAccess';
 
-const WhyOneCart = () => {
+import ChatBidBuy from './chatBidBuy';
+import TapInTune from './tapInTune';
+import PocketTheGoods from './pocketTheGoods';
+
+const HowItWorks = () => {
   const [current, setCurrent] = useState(0);
-  const components = [UserDashboard, BestFinds, ExclusiveAccess];
+  const components = [TapInTune, ChatBidBuy, PocketTheGoods];
 
   const next = () => setCurrent((prev) => (prev + 1) % components.length);
   const prev = () =>
@@ -17,6 +18,7 @@ const WhyOneCart = () => {
   return (
     <div className='relative px-3'>
       <CurrentComponent
+        key={current}
         onNext={next}
         onPrev={prev}
         currentIndex={current}
@@ -26,4 +28,4 @@ const WhyOneCart = () => {
   );
 };
 
-export default WhyOneCart;
+export default HowItWorks;

@@ -7,6 +7,8 @@
   /* Background Images */
   --bg-hero: url('/images/background-image-hero.png');
   --bg-hero-tab: url('/images/background-image-section.png');
+  --bg-hero-section: url('/images/background-class.png');
+  --bg-contact-section: url('/images/background-contact.png');
   --bg-button: linear-gradient(
     91.9deg,
     #dd0ced -5.47%,

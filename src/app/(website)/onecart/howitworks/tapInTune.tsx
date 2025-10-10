@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import HeroImageTextStrip from '@/components/HeroImageTextStrip';
+import ImageTextStrip from '@/components/imageTextStrip';
 
 interface SectionNavProps {
   onNext?: () => void;
@@ -8,16 +8,23 @@ interface SectionNavProps {
   currentIndex?: number;
   total?: number;
 }
-const BestFinds = ({
+const TapInTune = ({
   onNext,
   onPrev,
   currentIndex,
   total,
 }: SectionNavProps) => {
   return (
-    <section className='bg-[linear-gradient(0deg,rgba(137,13,139,0)_-77.08%,rgba(137,13,139,0.08)_100%)] rounded-3xl '>
+    <section
+      style={{
+        backgroundImage: 'var(--bg-hero-section)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+      className='rounded-3xl px-10'
+    >
       <div className='py-10'>
-        <HeroImageTextStrip
+        <ImageTextStrip
           title='Why OneCart?'
           contents={[
             'AI-Powered Dashboard',
@@ -33,8 +40,8 @@ const BestFinds = ({
             </div>,
             'Exclusive Access',
           ]}
-          imageSrc='/images/best-finds.png'
-          textPosition='left'
+          imageSrc='/images/how-it-works.png'
+          textPosition='right'
           imageWidth={600}
           imageHeight={600}
           onNext={onNext}
@@ -47,4 +54,4 @@ const BestFinds = ({
   );
 };
 
-export default BestFinds;
+export default TapInTune;

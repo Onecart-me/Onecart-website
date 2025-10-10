@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import GenericFooter from '@/components/GenericFooter';
 import Navbar from '@/components/Navbar';
+import Totopbtn from './(website)/toTopBtn';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -38,6 +39,7 @@ export default function RootLayout({
           <main className='flex-grow w-full'>{children}</main>
           <GenericFooter />
         </div>
+        <Totopbtn />
       </body>
     </html>
   );
