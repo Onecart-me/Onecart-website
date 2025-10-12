@@ -38,10 +38,10 @@ const GenericFooter = () => {
         <h6 className='text-sm font-inter'>
           Copyrights @ 2025 Privacy Policy Terms and Conditions
         </h6>
-        <div className='grid grid-flow-col text-[#890D8B] gap-6 items-center '>
-          <FaTwitter className='w-16 h-12' />
-          <FaLinkedin className='w-16 h-12' />
-          <FaFacebook className='w-16 h-12' />
+        <div className='grid grid-flow-col text-[#890D8B] gap-3 items-center '>
+          <FaTwitter className='w-5 h-12' />
+          <FaLinkedin className='w-5 h-12' />
+          <FaFacebook className='w-5 h-12' />
         </div>
       </div>
     </section>

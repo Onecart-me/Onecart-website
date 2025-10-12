@@ -3,14 +3,14 @@ import React from 'react';
 
 const ContactUs = () => {
   return (
-    <section className='px-4'>
+    <section className='px-4 mb-4'>
       <div
         style={{
           backgroundImage: 'var(--bg-contact-section)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
-        className='rounded-3xl px-10'
+        className='rounded-2xl px-10'
       >
         <div className='grid justify-center mx-auto py-10'>
           <h5 className='text-[#000000] font-semibold font-inter md:text-2xl'>

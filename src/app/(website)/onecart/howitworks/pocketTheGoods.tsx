@@ -35,7 +35,6 @@ const PocketTheGoods = ({
             'Exclusive Access',
           ]}
           imageSrc='/images/exclusive-access.png'
-          textPosition='right'
           imageWidth={600}
           imageHeight={600}
           onNext={onNext}

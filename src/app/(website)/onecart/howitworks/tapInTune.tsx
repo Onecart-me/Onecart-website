@@ -41,7 +41,6 @@ const TapInTune = ({
             'Exclusive Access',
           ]}
           imageSrc='/images/how-it-works.png'
-          textPosition='right'
           imageWidth={600}
           imageHeight={600}
           onNext={onNext}

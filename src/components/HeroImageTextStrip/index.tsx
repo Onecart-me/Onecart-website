@@ -63,32 +63,34 @@ const HeroImageTextStrip = ({
             ))}
           </div>
         </div>
-        <div
-          style={{ position: 'relative', zIndex: 50 }}
-          className='grid grid-flow-row bg-[#890D8B] items-center h-24 p-1 rounded-3xl ml-auto'
-        >
-          <Icon
-            icon={RawIoArrowUp}
-            className='text-white w-3 h-3 cursor-pointer z-10'
-            onClick={() => onPrev?.()}
-          />
-          {Array.from({ length: total }).map((_, i) =>
-            i === currentIndex ? (
-              <span key={i}>
-                <IoEllipse className='text-white w-3 h-3' />
-              </span>
-            ) : (
-              <span key={i}>
-                <IoEllipseOutline className='text-white w-3 h-3' />
-              </span>
-            )
-          )}
+        <div className='hidden md:block'>
+          <div
+            style={{ position: 'relative', zIndex: 50 }}
+            className='grid grid-flow-row  bg-[#890D8B] items-center h-24 p-1 rounded-3xl ml-auto'
+          >
+            <Icon
+              icon={RawIoArrowUp}
+              className='text-white w-3 h-3 cursor-pointer z-10'
+              onClick={() => onPrev?.()}
+            />
+            {Array.from({ length: total }).map((_, i) =>
+              i === currentIndex ? (
+                <span key={i}>
+                  <IoEllipse className='text-white w-3 h-3' />
+                </span>
+              ) : (
+                <span key={i}>
+                  <IoEllipseOutline className='text-white w-3 h-3' />
+                </span>
+              )
+            )}
 
-          <Icon
-            icon={RawIoArrowDown}
-            className='text-white w-3 h-3 cursor-pointer z-10'
-            onClick={() => onNext?.()}
-          />
+            <Icon
+              icon={RawIoArrowDown}
+              className='text-white w-3 h-3 cursor-pointer z-10'
+              onClick={() => onNext?.()}
+            />
+          </div>
         </div>
       </div>
 

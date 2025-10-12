@@ -1,20 +1,21 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { BiArrowToTop } from 'react-icons/bi';
+import Image from 'next/image';
 
 const Totopbtn = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      setIsVisible(scrollTop > 100); // slightly delayed to avoid flicker
+    };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const handleScroll = () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    setIsVisible(scrollTop > 0);
-  };
 
   const handleClick = () => {
     window.scrollTo({
@@ -25,13 +26,19 @@ const Totopbtn = () => {
 
   return (
     <button
-      className={`fixed bottom-[3rem] lg:right-4  right-4 lg:flex flex-col  cursor-pointer font-semibold h-[64px] w-[64px] justify-center items-center transform translate-y-1/2 bg-blue-500 text-white p-2 rounded-full ${
-        isVisible ? 'visible' : 'invisible'
-      }`}
       onClick={handleClick}
+      aria-label='Scroll to top'
+      className={`fixed z-50 bottom-6 right-4 flex flex-col items-center justify-center p-2 transition-opacity duration-300 ${
+        isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+      }`}
     >
-      <BiArrowToTop />
-      <p className='text-xs'>TOP</p>
+      <Image
+        src='/images/top-button.png'
+        alt='Scroll to top'
+        width={58}
+        height={58}
+        className='w-12 h-12 sm:w-14 sm:h-14 lg:w-[58px] lg:h-[58px] '
+      />
     </button>
   );
 };

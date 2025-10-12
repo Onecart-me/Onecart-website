@@ -20,60 +20,80 @@ export const OUR_TEAM_SCHEMA = [
     role: 'Founder & CEO',
     link: '/',
     image: '/images/pratik.png',
+    description:
+      'Pratik combines his expertise in business and technology to craft a seamless experience . When he’s not busy steering the ship, you can find him exploring local food markets, experimenting with new recipes, or brainstorming the next big idea over a cup of coffee.A curious thinker and passionate builder, Pratik thrives at the intersection of creativity, culture, and technology — always looking for new ways to turn bold ideas into meaningful realities.',
   },
   {
     name: 'Minakhi Das',
     role: 'Design Lead',
     link: '/',
     image: '/images/minakhi.png',
+    description:
+      'A creative explorer at heart, she leads with vision and intention — turning bold ideas into intuitive experiences. With deep expertise in UX, UI, and brand design, she blends imagination with strategy to craft solutions that are both meaningful and beautifully executed.Wanderlust-fueled and curiosity-driven, she brings a global perspective to every pixel and process. Whether shaping a product interface or building a brand from the ground up, her work is guided by empathy, creativity, and a deep understanding of human experience.',
   },
   {
     name: 'Dhananjay Sharma',
     role: 'Technical Lead',
     link: '/our-team',
     image: '/images/dhan.png',
+    description:
+      'Mobile engineer by day, adventurer by heart. Whether I’m scaling code or mountain trails, I live for the thrill of the challenge. From late-night debugging to last-minute backpacking trips, I believe life (and tech) is better when you push the limits. Building Onecart is my latest ride — and trust me, it’s one hell of an adventure. ',
   },
   {
     name: 'Siddharth Bisht',
     role: 'Full-Stack Developer',
     link: '/',
     image: '/images/sid.png',
+    description:
+      'Code crafter since 2017, shaping web & mobile experiences that are scalable, efficient, and impactful.MERN stack & React Native enthusiast with a knack for TypeScript, and building robust backends powered by Node.js & Express.AWS-savvy (S3, EC2, Lambda) and on an exciting journey into AI/ML & Deep Learning to bring intelligence into applications.',
   },
   {
     name: 'Swati Raut',
     role: 'Senior UX/UI Designer ',
     link: '/',
     image: '/images/swati.png',
+    description:
+      'I see design as a bridge between people and technology — a way to make digital experiences feel effortless, inclusive, and meaningful. My journey has been shaped by continuous growth: self-learning, embracing challenges, and adapting across roles and teams. I believe in design with intention — where every detail has meaning, and simplicity translates into understanding. Through that lens, I aim to craft digital experiences that are intuitive, refined, and deeply human. Beyond the screen, I draw inspiration from pottery, painting, embroidery, and travelling. Working with form, texture, and colours fuels my imagination and reminds me that creativity thrives at the intersection of beauty and function.',
   },
   {
     name: 'Misbah Khalid',
     role: 'Visual Designer ',
     link: '/our-team',
     image: '/images/misbah.png',
+    description:
+      'I’m a Graphic and UI/UX Designer passionate about solving problems through design. With a strong eye for detail and a focus on user experience, I create designs that are not only visually engaging but also functional and intuitive. My goal is to bridge creativity with strategy—crafting solutions that help brands connect with their audience and make digital experiences seamless.',
   },
   {
     name: 'Preethi Batchali',
     role: 'UX/UI Designer',
     link: '/',
     image: '/images/preethi.png',
+    description:
+      "Curious at heart, I design experiences that are purposeful, human-centered, and inclusive. With a background in both UI and UX, I enjoy crafting smooth flows and joyful interfaces that solve real user problems.Constantly evolving, I believe design is a journey of empathy, iteration, and impact.When I'm not wireframing or prototyping, you'll find me dancing, doodling, or exploring cultures through travel. ",
   },
   {
     name: 'Asin Honore',
     role: 'Full-Stack Developer ',
     link: '/our-story',
     image: '/images/asin.png',
+    description:
+      "I'm Asin Honore, a dedicated full-stack web developer  and web scraper , focused on creating dynamic and efficient web applications.",
   },
   {
     name: 'Barisanem Fiiwe',
     role: 'Full-Stack Developer ',
     link: '/our-team',
     image: '/images/barry.png',
+    description:
+      "I'm a Front-End Developer skilled in React, Next.js, TypeScript, and Tailwind CSS. I build responsive, user-friendly web applications with a focus on clean architecture and performance. I also work with Cypress and Vitest to ensure robust test coverage and code reliability. I'm committed to continuous learning and staying up to date with modern web technologies.",
   },
   {
     name: 'Usama Ahmed',
     role: 'Full-Stack Developer ',
     link: '/our-team',
     image: '/images/usama.png',
+    description:
+      'Usama leads the development of Onecart’s mobile application, leveraging react native to deliver a seamless, high-performance shopping experience. With extensive full-stack expertise and a strong background in scalable architecture, he drives the design, implementation and optimisation of features that bring Onecart to users everywhere.',
   },
 ];
 // footer schema
@@ -90,14 +110,14 @@ export const footerSectionSchema = [
     title: 'For Buyers',
     links: [
       { label: 'How it Works', href: '/' },
-      { label: 'FAQS', href: '/' },
+      { label: 'FAQS', href: '/faq' },
     ],
   },
   {
     title: 'For Sellers',
     links: [
       { label: 'Become a OneSeller', href: '/' },
-      { label: 'FAQS', href: '/' },
+      { label: 'FAQS', href: '/faq' },
     ],
   },
   {

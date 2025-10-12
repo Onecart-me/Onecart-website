@@ -29,7 +29,6 @@ const ChatBidBuy = ({ onNext, onPrev, currentIndex, total }: SectionProps) => {
             'Exclusive Access',
           ]}
           imageSrc='/images/best-finds.png'
-          textPosition='right'
           imageWidth={600}
           imageHeight={600}
           onNext={onNext}
