@@ -17,15 +17,15 @@ const UserDashboard = ({
 }: SectionNavProps) => {
   return (
     <section className='bg-[linear-gradient(0deg,rgba(137,13,139,0)_-77.08%,rgba(137,13,139,0.08)_100%)] rounded-3xl '>
-      <div className=' py-10'>
+      <div className=' py-10 md:p-0 p-5'>
         <HeroImageTextStrip
           title='Why OneCart?'
           contents={[
             <div key='content-1'>
-              <p className='font-bold text-[#570059] underline text-xl'>
+              <p className='font-bold text-[#570059] underline  text-lg md:text-xl'>
                 All in one Dashboard
               </p>
-              <p className='text-[#000000] w-3/5 mx-auto font-inter mt-2'>
+              <p className='text-[#000000] md:w-3/5 mx-auto font-inter mt-2'>
                 Our dashboard identifies market patterns, projects likely trends
                 from historical and real-time data, and presents a detailed view
                 of sales and other key metrics with transparent methods and

@@ -6,6 +6,8 @@ import WhyOneCart from './(website)/onecart/whyonecart';
 import BestFinds from './(website)/onecart/whyonecart/bestFinds';
 import ExcluciveAccess from './(website)/onecart/whyonecart/exclusiveAccess';
 import UserDashboard from './(website)/onecart/whyonecart/userDashboard';
+import TapInTune from './(website)/onecart/howitworks/tapInTune';
+import HowItWorks from './(website)/onecart/howitworks';
 
 export default function Home() {
   return (
@@ -14,13 +16,13 @@ export default function Home() {
       <div className='hidden md:block'>
         <WhyOneCart />
       </div>
-      <div className='md:hidden block'>
+      <div className=' grid gap-6 md:hidden px-3'>
         <UserDashboard />
         <BestFinds />
         <ExcluciveAccess />
       </div>
+      <HowItWorks />
 
-      <HowItWorksTapIn />
       <OneCartTieUps />
     </section>
   );

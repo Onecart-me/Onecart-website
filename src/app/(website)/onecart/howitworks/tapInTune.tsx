@@ -20,6 +20,7 @@ const TapInTune = ({
         backgroundImage: 'var(--bg-hero-section)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        isolation: 'isolate',
       }}
       className='rounded-3xl px-10'
     >

@@ -8,10 +8,10 @@ import HowItWorks from './howitworks';
 export default function OneCart() {
   return (
     <section className='grid gap-5 pt-3'>
-      <OneCartHero />
+      {/* <OneCartHero />
       <WhyOneCart />
       <HowItWorks />
-      <OneCartTieUps />
+      <OneCartTieUps /> */}
     </section>
   );
 }

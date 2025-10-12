@@ -47,8 +47,8 @@ const OneCartHero = () => {
           </span>
         </div>
         <div className='flex-1 flex flex-col gap-4'>
-          <div className='flex flex-col-reverse md:grid md:grid-cols-2 bg-[#FFF2FF80] rounded-2xl'>
-            <span className=''>
+          <div className='flex flex-col-reverse  md:grid md:grid-cols-2 bg-[#FFF2FF80] rounded-2xl'>
+            <span className='md:mt-0 mt-9'>
               <Image
                 src='/images/phone-outline.png'
                 alt='live-stream'
@@ -149,27 +149,27 @@ const OneCartHero = () => {
             }}
             className='flex flex-col-reverse md:grid md:grid-cols-2 px-7 bg-heroImageTab bg-no-repeat rounded-3xl'
           >
-            <div className='pt-8'>
-              <h5 className='text-[#570059] grid justify-center font-inter text-[32px] font-bold'>
+            <div className='pt-8 md:py-0 py-5'>
+              <h5 className='text-[#570059] grid justify-center font-inter text-xl md:text-[32px] font-bold'>
                 Become a OneSeller
               </h5>
               <p className='text-[#303030] grid text-center font-inter mt-3'>
                 Oneseller can sell products using live streaming functionality
               </p>
               <div className='relative grid gap-5 justify-center mt-10'>
-                <p className='text-[#554EBF] font-inter italic'>
+                <p className='text-[#554EBF] font-semibold font-inter italic'>
                   Start with as low as £1
                 </p>
                 <button
                   style={{ color: '#fff' }}
-                  className='bg-[#570059]  w-52 mt-5 rounded-xl text-white grid grid-flow-col items-center py-3 px-4 gap-2'
+                  className='bg-[#570059]  w-48 md:mt-5 mt-6 rounded-xl text-white grid grid-flow-col items-center py-3 px-4 gap-2'
                 >
                   Register Now
                   <span>
                     <IoArrowForward />
                   </span>
                 </button>
-                <span className='absolute top-0 left-4'>
+                <span className='absolute top-0 md:left-4 left-2'>
                   <Image
                     src='/images/curve-arrow.png'
                     alt='arrow'

@@ -19,7 +19,7 @@ const Icon = ({
 );
 
 export interface ImageTextProps {
-  title: string;
+  title?: string;
   contents: (ReactNode | string)[];
   imageSrc: string | StaticImageData; // can be a path or an import
   imageAlt?: string;
@@ -95,7 +95,7 @@ const HeroImageTextStrip = ({
       </div>
 
       <div
-        className={`flex justify-center ${
+        className={`flex justify-center py-10 ${
           textPosition === 'right' ? 'md:order-1' : 'md:order-2'
         }`}
       >

@@ -52,14 +52,18 @@ const ImageTextStrip = ({
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className='z-10'
+          className='z-0'
         >
           <Image
             src={imageSrc}
             alt={imageAlt}
             width={imageWidth}
             height={imageHeight}
-            style={{ objectFit: 'cover', height: '100%' }}
+            style={{
+              objectFit: 'cover',
+              height: '100%',
+              mixBlendMode: 'multiply',
+            }}
             className='mix-blend-multiply opacity-90 rounded-2xl select-none'
             priority
           />
