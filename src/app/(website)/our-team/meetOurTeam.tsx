@@ -5,13 +5,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { OUR_TEAM_SCHEMA } from '@/utils/constants';
 import { Button } from '@/components/GenericButton';
-import TeamModal from '@/components/TeamModal'; // ✅ import modal
+import TeamModal from '@/components/TeamModal';
+
+interface Member {
+  name: string;
+  role: string;
+  image: string;
+  link: string;
+  description?: string;
+}
 
 const MeetOurTeam = () => {
+  const [selectedMember, setSelectedMember] = useState<Member | null>(null);
   const [openModal, setOpenModal] = useState(false);
-  const [selectedMember, setSelectedMember] = useState(null);
-
-  const handleOpenModal = (member) => {
+  const handleOpenModal = (member: Member) => {
     setSelectedMember(member);
     setOpenModal(true);
   };
