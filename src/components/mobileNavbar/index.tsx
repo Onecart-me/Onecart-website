@@ -5,7 +5,12 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { NAV_SCHEMA } from '@/utils/constants';
 
-export default function MobileNavbar({ setIsOpen, setIsModalOpen }) {
+interface MobileNavbarProps {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function MobileNavbar({ isOpen, setIsOpen }: MobileNavbarProps) {
   const pathname = usePathname();
 
   return (
