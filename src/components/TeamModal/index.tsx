@@ -4,7 +4,20 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-const TeamModal = ({ member, onClose }) => {
+interface Member {
+  name: string;
+  role: string;
+  image: string;
+  link: string;
+  description?: string;
+}
+
+interface TeamModalProps {
+  member: Member | null;
+  onClose: () => void;
+}
+
+const TeamModal: React.FC<TeamModalProps> = ({ member, onClose }) => {
   if (!member) return null;
 
   return (

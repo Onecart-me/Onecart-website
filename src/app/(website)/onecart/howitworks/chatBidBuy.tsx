@@ -14,21 +14,23 @@ const ChatBidBuy = ({ onNext, onPrev, currentIndex, total }: SectionProps) => {
     <section className='bg-[linear-gradient(0deg,rgba(137,13,139,0)_-77.08%,rgba(137,13,139,0.08)_100%)] rounded-3xl'>
       <div className='py-10'>
         <ImageTextStrip
-          title='Chat, Bid & Buy'
+          title='How it works?'
           contents={[
-            'AI-Powered Dashboard',
+            'Tap In & Tune In',
             <div key='content-1'>
               <p className='font-bold text-[#570059] underline text-xl'>
-                Best finds starting from £1
+                Chat, Bid, Buy
               </p>
               <p className='text-[#000000] w-3/5 mx-auto font-inter mt-2'>
-                Explore a wide range of trendy outfits and must-have
-                accessories.
+                Jump into a live room that catches your eye. Ask questions in
+                the chat, watch close-up product reveals, and place instant bids
+                or fixed-price grabs with a single swipe. Secure checkout
+                happens right inside the stream, so you never miss a beat.
               </p>
             </div>,
-            'Exclusive Access',
+            'Pocket the Goods',
           ]}
-          imageSrc='/images/best-finds.png'
+          imageSrc='/images/chat-bid-buy.png'
           imageWidth={600}
           imageHeight={600}
           onNext={onNext}

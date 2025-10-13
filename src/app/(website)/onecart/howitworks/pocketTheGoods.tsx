@@ -17,9 +17,9 @@ const PocketTheGoods = ({
 }: SectionNavProps) => {
   return (
     <section className='bg-[linear-gradient(0deg,rgba(137,13,139,0)_-77.08%,rgba(137,13,139,0.08)_100%)] rounded-3xl '>
-      <div className='py-10'>
+      <div className='py-10 md:px-0 px-5'>
         <ImageTextStrip
-          title='Why OneCart?'
+          title='How it works?'
           contents={[
             'AI-Powered Dashboard',
             <div key='content-1'>
@@ -34,7 +34,7 @@ const PocketTheGoods = ({
             </div>,
             'Exclusive Access',
           ]}
-          imageSrc='/images/exclusive-access.png'
+          imageSrc='/images/payment.png'
           imageWidth={600}
           imageHeight={600}
           onNext={onNext}

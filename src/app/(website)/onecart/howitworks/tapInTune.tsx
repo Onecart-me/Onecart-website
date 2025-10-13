@@ -24,22 +24,24 @@ const TapInTune = ({
       }}
       className='rounded-3xl px-10'
     >
-      <div className='py-10'>
+      <div className='py-10 md:px-0 '>
         <ImageTextStrip
-          title='Why OneCart?'
+          title='How it works?'
           contents={[
-            'AI-Powered Dashboard',
             <div key='content-1'>
               <p className='font-bold text-[#570059] underline text-xl'>
-                Best finds and starting with as low as £1
+                Tap In & Tune In
               </p>
               <p className='text-[#000000] w-3/5 mx-auto font-inter mt-2'>
-                Explore a wide range of trendy outfits and must-have
-                accessories. Find unbeatable deals that make fashion both
-                affordable and accessible.
+                Download the OneCart app, sign up in seconds, and open the Live
+                Feed. You’ll in a buzzing marketplace of real-time shows where
+                sellers demo everything from street-style sneakers to
+                limited-edition collectibles—all streaming live from across the
+                UK.
               </p>
             </div>,
-            'Exclusive Access',
+            'Chat, Bid, Buy',
+            'Pocket the Goods',
           ]}
           imageSrc='/images/how-it-works.png'
           imageWidth={600}

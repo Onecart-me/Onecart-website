@@ -7,6 +7,7 @@ import {
   IoArrowUp as RawIoArrowUp,
   IoEllipse,
   IoEllipseOutline,
+  IoCheckmarkCircleOutline,
 } from 'react-icons/io5';
 import { IconType } from 'react-icons';
 import { motion } from 'framer-motion';
@@ -45,7 +46,7 @@ const ImageTextStrip = ({
   total = 3,
 }: ImageTextProps) => {
   return (
-    <div className='grid md:grid-cols-2 justify-between items-center'>
+    <div className='flex flex-col-reverse md:grid md:grid-cols-2 justify-between items-center'>
       <div className='grid grid-flow-col items-center'>
         <motion.div
           key={`image-${currentIndex}`}
@@ -69,9 +70,10 @@ const ImageTextStrip = ({
           />
         </motion.div>
         {/* === NAVIGATOR === */}
+
         <div
           style={{ position: 'relative', zIndex: 100 }}
-          className='grid grid-flow-row bg-[#890D8B] items-center h-24 p-1 rounded-3xl ml-auto'
+          className='md:grid hidden grid-flow-row bg-[#890D8B] items-center h-24 p-1 rounded-3xl ml-auto'
         >
           <Icon
             icon={RawIoArrowUp}
@@ -115,7 +117,10 @@ const ImageTextStrip = ({
                 key={index}
                 className='grid gap-2 justify-center text-center'
               >
-                <p className='font-inter text-[#000000] mx-auto'>{item}</p>
+                <IoCheckmarkCircleOutline className='w-14 h-14 mx-auto text-[#890D8B]' />
+                <p className='font-inter text-xl text-[#570059] mx-auto'>
+                  {item}
+                </p>
               </div>
             ))}
           </motion.div>
