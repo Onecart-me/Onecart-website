@@ -154,3 +154,122 @@ export const ONECART_TIE_UP_SCHEMA = [
       "Onecart is selected for the 'Innovator Founder' programme in collaboration with Kollider Sheffield. Kollider- Barclays Eagle Labs is an initiative by Barclays Bank UK PLC to support entrepreneurs, startups, and scaleups in the United Kingdom.",
   },
 ];
+// faq schema
+export const FAQ_SCHEMA = [
+  {
+    id: 1,
+    question: 'What is Onecart?',
+    answer:
+      'The Undergraduate Empowerment and Sensitization Scheme (UESS) is a transformative platform designed to bridge the gap between academia and industry, empowering Nigerian undergraduates with the skills, knowledge, and mentorship they need to thrive. We believe in building a generation of future leaders and entrepreneurs who can drive positive change in their communities and the nation.',
+  },
+  {
+    id: 2,
+    question: 'How is Onecart different from regular shopping apps?',
+    answer:
+      'Our goal is to empower 100,000 undergraduates across 20 higher institutions in the next five years, creating a ripple effect of positive change throughout Nigeria.',
+  },
+  {
+    id: 3,
+    question: 'Do I need an account to make a purchase on Onecart?',
+    answer:
+      'To ensure we empower our beneficiaries, we have set up three empowerment structures. They are:',
+  },
+  {
+    id: 4,
+    question: 'How do I buy something during a live stream?',
+    answer:
+      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+  },
+  {
+    id: 5,
+    question: 'Can I ask questions before purchasing?',
+    answer: 'You can be a part of UESS through any of these 3 ways',
+  },
+  {
+    id: 6,
+    question: 'Is my payment information secure?',
+    answer:
+      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+  },
+  {
+    id: 7,
+    question: 'How do I track my order?',
+    answer:
+      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+  },
+  {
+    id: 8,
+    question: 'What if there’s a problem with my order?',
+    answer:
+      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+  },
+];
+
+// faq schema
+export const BUYER_FAQ_SCHEMA = [
+  {
+    id: 1,
+    question: 'What is Onecart?',
+    answer:
+      'The Undergraduate Empowerment and Sensitization Scheme (UESS) is a transformative platform designed to bridge the gap between academia and industry, empowering Nigerian undergraduates with the skills, knowledge, and mentorship they need to thrive. We believe in building a generation of future leaders and entrepreneurs who can drive positive change in their communities and the nation.',
+  },
+  {
+    id: 2,
+    question: 'How is Onecart different from regular shopping apps?',
+    answer:
+      'Our goal is to empower 100,000 undergraduates across 20 higher institutions in the next five years, creating a ripple effect of positive change throughout Nigeria.',
+  },
+  {
+    id: 3,
+    question: 'Who can become Oneseller?',
+    answer:
+      'To ensure we empower our beneficiaries, we have set up three empowerment structures. They are:',
+  },
+  {
+    id: 4,
+    question: 'How do i register as Oneseller?',
+    answer:
+      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+  },
+  {
+    id: 5,
+    question: 'What do i need to start selling?',
+    answer: 'You can be a part of UESS through any of these 3 ways',
+  },
+  {
+    id: 6,
+    question: 'Who are Onesellers?',
+    answer:
+      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+  },
+  {
+    id: 7,
+    question: 'Is it free to join as a seller?',
+    answer:
+      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+  },
+  {
+    id: 8,
+    question: 'Can I broadcast from my bedroom or home?',
+    answer:
+      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+  },
+  {
+    id: 8,
+    question: 'Can I broadcast from my bedroom or home?',
+    answer:
+      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+  },
+  {
+    id: 9,
+    question: 'Can I interact with viewers when selling products?',
+    answer:
+      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+  },
+  {
+    id: 10,
+    question: 'What products can I sell?',
+    answer:
+      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+  },
+];
