@@ -36,7 +36,7 @@ const GenericFooter = () => {
       <div className='grid md:grid-flow-col py-5 justify-between  gap-2 items-center px-10'>
         <Image src='/onecart-logo.png' alt='logo' height={50} width={50} />
         <h6 className='text-sm font-inter'>
-          Copyrights @ 2025 Privacy Policy Terms and Conditions
+          Copyrights @ 2025 | Privacy Policy | Terms and Conditions
         </h6>
         <div className='grid grid-flow-col text-[#890D8B] w-max md:gap-3 gap-4 items-center '>
           <FaTwitter className='w-5 h-12' />

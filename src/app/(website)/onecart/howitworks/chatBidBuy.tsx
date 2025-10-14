@@ -11,17 +11,25 @@ interface SectionProps {
 
 const ChatBidBuy = ({ onNext, onPrev, currentIndex, total }: SectionProps) => {
   return (
-    <section className='bg-[linear-gradient(0deg,rgba(137,13,139,0)_-77.08%,rgba(137,13,139,0.08)_100%)] rounded-3xl'>
+    <section
+      style={{
+        backgroundImage: 'var(--bg-hero-section)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        isolation: 'isolate',
+      }}
+      className='rounded-3xl px-10'
+    >
       <div className='py-10'>
         <ImageTextStrip
           title='How it works?'
           contents={[
             'Tap In & Tune In',
             <div key='content-1'>
-              <p className='font-bold text-[#570059] underline text-xl'>
+              <p className='font-bold text-[#570059] underline text-lg md:text-xl'>
                 Chat, Bid, Buy
               </p>
-              <p className='text-[#000000] w-3/5 mx-auto font-inter mt-2'>
+              <p className='text-[#000000] md:w-3/5 mx-auto font-inter mt-2'>
                 Jump into a live room that catches your eye. Ask questions in
                 the chat, watch close-up product reveals, and place instant bids
                 or fixed-price grabs with a single swipe. Secure checkout

@@ -16,7 +16,15 @@ const PocketTheGoods = ({
   total,
 }: SectionNavProps) => {
   return (
-    <section className='bg-[linear-gradient(0deg,rgba(137,13,139,0)_-77.08%,rgba(137,13,139,0.08)_100%)] rounded-3xl '>
+    <section
+      style={{
+        backgroundImage: 'var(--bg-hero-section)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        isolation: 'isolate',
+      }}
+      className='rounded-3xl px-10'
+    >
       <div className='py-10 md:px-0 px-5'>
         <ImageTextStrip
           title='How it works?'
