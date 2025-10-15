@@ -24,10 +24,10 @@ const OneCartTieUps = () => {
                       />
                     </span>
                     <div className='grid grid-flow-row item-center mt-4 gap-6'>
-                      <h6 className='font-medium md:text-xl mt-6 text-[#570059] mx-auto '>
+                      <h6 className='font-medium md:text-left text-center text-xl mt-6 text-[#570059] mx-auto '>
                         {r.slug}
                       </h6>
-                      <h6 className='font-inter text-[#2B2B2B] text-center mx-auto w-2/3'>
+                      <h6 className='font-inter text-[#2B2B2B] text-center mx-auto md:w-2/3'>
                         {r.content}
                       </h6>
                     </div>

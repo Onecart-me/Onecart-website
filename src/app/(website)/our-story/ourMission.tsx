@@ -17,7 +17,7 @@ const OurMission = () => {
               />
             </span>
           </div>
-          <div className='p-8'>
+          <div className='p-8 md:mt-0 mt-8'>
             <h5 className='text-[#FFFFFF] font-bold grid  md:justify-end justify-center font-inter text-lg md:text-[2.5rem] md:w-8/12'>
               Our Mission
             </h5>

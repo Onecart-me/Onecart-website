@@ -25,7 +25,7 @@ const PocketTheGoods = ({
       }}
       className='rounded-3xl px-10'
     >
-      <div className='py-10 md:px-0 px-5'>
+      <div className=' md:block hidden py-10 md:px-0 px-5'>
         <ImageTextStrip
           title='How it works?'
           contents={[
@@ -41,6 +41,30 @@ const PocketTheGoods = ({
               </p>
             </div>,
             'Exclusive Access',
+          ]}
+          imageSrc='/images/payment.png'
+          imageWidth={600}
+          imageHeight={600}
+          onNext={onNext}
+          onPrev={onPrev}
+          currentIndex={currentIndex}
+          total={total}
+        />
+      </div>
+      <div className=' md:hidden block py-10 md:px-0 px-5'>
+        <ImageTextStrip
+          title='How it works?'
+          contents={[
+            <div key='content-1'>
+              <p className='font-bold text-[#570059] underline text-xl'>
+                Best finds and starting with as low as £1
+              </p>
+              <p className='text-[#000000] md:w-3/5 mx-auto font-inter mt-2'>
+                Explore a wide range of trendy outfits and must-have
+                accessories. Find unbeatable deals that make fashion both
+                affordable and accessible.
+              </p>
+            </div>,
           ]}
           imageSrc='/images/payment.png'
           imageWidth={600}

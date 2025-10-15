@@ -16,15 +16,24 @@ export default function Home() {
       <div className='hidden md:block'>
         <WhyOneCart />
       </div>
-      <div className=' grid gap-6 md:hidden px-3'>
-        <UserDashboard />
-        <BestFinds />
-        <ExcluciveAccess />
+      <div className='px-3'>
+        <div className='  bg-[linear-gradient(0deg,rgba(137,13,139,0)_-77.08%,rgba(137,13,139,0.08)_100%)] rounded-2xl  grid gap-6 md:hidden '>
+          <UserDashboard />
+          <div className='px-28 -mt-3'>
+            <hr className='bg-[#890D8B4D]' />
+          </div>
+          <BestFinds />
+          <div className='px-28 -mt-3'>
+            <hr className='bg-[#890D8B4D]' />
+          </div>
+          <ExcluciveAccess />
+        </div>
       </div>
+
       <div className='hidden md:block'>
         <HowItWorks />
       </div>
-      <div className=' grid gap-6 md:hidden px-3'>
+      <div className=' grid md:hidden px-3'>
         <TapInTune />
         <ChatBidBuy />
         <PocketTheGoods />

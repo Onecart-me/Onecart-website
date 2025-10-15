@@ -23,6 +23,7 @@ const Icon = ({
 export interface ImageTextProps {
   title: string;
   contents: (ReactNode | string)[];
+  showTitleOnMobile?: boolean;
   imageSrc: string | StaticImageData;
   imageAlt?: string;
   imageWidth: number;
@@ -35,6 +36,7 @@ export interface ImageTextProps {
 
 const ImageTextStrip = ({
   title,
+  showTitleOnMobile,
   contents,
   imageSrc,
   imageAlt = 'Section image',
@@ -65,7 +67,7 @@ const ImageTextStrip = ({
               height: '100%',
               mixBlendMode: 'multiply',
             }}
-            className='mix-blend-multiply opacity-90 rounded-2xl select-none'
+            className='mix-blend-multiply md:mt-0 mt-7 opacity-90 rounded-2xl select-none'
             priority
           />
         </motion.div>
@@ -109,16 +111,22 @@ const ImageTextStrip = ({
             transition={{ duration: 0.4 }}
             className='grid gap-9 justify-center text-center'
           >
-            <h5 className='grid mx-auto font-inter text-[#570059] font-bold text-3xl'>
-              {title}
-            </h5>
+            {title && (
+              <h5
+                className={`${
+                  showTitleOnMobile ? 'grid' : 'hidden md:grid'
+                } mx-auto font-inter text-[#570059] font-bold text-2xl md:text-3xl`}
+              >
+                {title}
+              </h5>
+            )}
             {contents.map((item, index) => (
               <div
                 key={index}
                 className='grid gap-2 justify-center text-center'
               >
                 <IoCheckmarkCircleOutline className='w-14 h-14 mx-auto text-[#890D8B]' />
-                <p className='font-inter text-xl text-[#570059] mx-auto'>
+                <p className='font-inter text-lg  md:text-xl text-[#570059] mx-auto'>
                   {item}
                 </p>
               </div>

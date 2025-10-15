@@ -20,6 +20,7 @@ const Icon = ({
 
 export interface ImageTextProps {
   title?: string;
+  showTitleOnMobile?: boolean;
   contents: (ReactNode | string)[];
   imageSrc: string | StaticImageData; // can be a path or an import
   imageAlt?: string;
@@ -34,6 +35,7 @@ export interface ImageTextProps {
 
 const HeroImageTextStrip = ({
   title,
+  showTitleOnMobile,
   contents,
   imageSrc,
   imageAlt = 'Section image',
@@ -50,9 +52,15 @@ const HeroImageTextStrip = ({
       <div className='grid grid-flow-col items-center'>
         <div>
           <div className='grid gap-9 justify-center text-center'>
-            <h5 className='grid mx-auto font-inter text-[#570059] font-bold text-3xl'>
-              {title}
-            </h5>
+            {title && (
+              <h5
+                className={`${
+                  showTitleOnMobile ? 'grid' : 'hidden md:grid'
+                } mx-auto font-inter text-[#570059] font-bold text-2xl md:text-3xl`}
+              >
+                {title}
+              </h5>
+            )}
             {contents.map((item, index) => (
               <div
                 key={index}

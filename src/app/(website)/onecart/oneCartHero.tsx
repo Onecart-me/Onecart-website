@@ -80,64 +80,66 @@ const OneCartHero = () => {
                   />
                 </span>
               </div>
-              <div className='relative grid justify-center mx-auto mt-9'>
-                <div className='grid md:grid-flow-col w-max items-center gap-2'>
-                  <span className=''>
-                    <Image
-                      src='/images/apple-icon.png'
-                      alt='live-stream'
-                      width={40}
-                      height={40}
-                    />
-                  </span>
-                  <div className='grid grid-flow-row w-max mt-3'>
-                    <p className='font-inter text-sm text-[#000000]'>
-                      Download on the
-                    </p>
-                    <p className='text-[#000000] font-inter -mt-2 text-2xl'>
-                      App Store
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <hr className=' grid justify-center mt-5 mx-auto bg-[#570059] h-1 w-20' />
-                  </div>
-                  <div className='grid md:grid-flow-col w-max items-center mt-5 gap-2'>
+              <div className='relative grid items-center  justify-center mx-auto mt-9 md:mb-0 mb-3'>
+                <div className='grid  md:grid-flow-row items-center grid-flow-col gap-4'>
+                  <div className='grid grid-flow-col w-max items-center gap-2'>
                     <span className=''>
                       <Image
-                        src='/images/google.png'
+                        src='/images/apple-icon.png'
                         alt='live-stream'
                         width={40}
                         height={40}
                       />
                     </span>
                     <div className='grid grid-flow-row w-max mt-3'>
-                      <p className='font-inter text-sm text-[#000000]'>
-                        GET IT ON
+                      <p className='font-inter  text-xs md:text-sm text-[#000000]'>
+                        Download on the
                       </p>
-                      <p className='text-[#000000] font-inter -mt-2 text-2xl'>
-                        Google Play
+                      <p className='text-[#000000] font-inter -mt-2 text-lg md:text-2xl'>
+                        App Store
                       </p>
                     </div>
                   </div>
+                  <div>
+                    <div>
+                      <hr className='md:grid hidden justify-center mt-5 mx-auto bg-[#570059] h-1 w-20' />
+                    </div>
+                    <div className='grid grid-flow-col w-max items-center mt-5 gap-2'>
+                      <span className=''>
+                        <Image
+                          src='/images/google.png'
+                          alt='live-stream'
+                          width={40}
+                          height={40}
+                        />
+                      </span>
+                      <div className='grid grid-flow-row w-max md:mt-3'>
+                        <p className='font-inter  text-xs md:text-sm text-[#000000]'>
+                          GET IT ON
+                        </p>
+                        <p className='text-[#000000] font-inter -mt-2 text-lg md:text-2xl'>
+                          Google Play
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <span className='absolute md:top-0 md:right-10 -top-5 right-2'>
+                    <Image
+                      src='/images/curve-up.png'
+                      alt='curve'
+                      width={25}
+                      height={25}
+                    />
+                  </span>
+                  <span className='absolute -bottom-8 md:-bottom-2 md:left-12'>
+                    <Image
+                      src='/images/curve-down.png'
+                      alt='curve'
+                      width={25}
+                      height={25}
+                    />
+                  </span>
                 </div>
-                <span className='absolute top-0 right-10'>
-                  <Image
-                    src='/images/curve-up.png'
-                    alt='curve'
-                    width={25}
-                    height={25}
-                  />
-                </span>
-                <span className='absolute -bottom-2 left-12'>
-                  <Image
-                    src='/images/curve-down.png'
-                    alt='curve'
-                    width={25}
-                    height={25}
-                  />
-                </span>
               </div>
             </div>
           </div>
@@ -147,10 +149,10 @@ const OneCartHero = () => {
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
-            className='flex flex-col-reverse md:grid md:grid-cols-2 px-7 bg-heroImageTab bg-no-repeat rounded-3xl'
+            className='md:grid hidden md:grid-cols-2 px-7 bg-heroImageTab bg-no-repeat rounded-3xl'
           >
             <div className='pt-8 md:py-0 py-5'>
-              <h5 className='text-[#570059] grid justify-center font-inter text-xl md:text-[32px] font-bold'>
+              <h5 className='text-[#570059] grid justify-center font-inter text-xl mt-7 md:text-[32px] font-bold'>
                 Become a OneSeller
               </h5>
               <p className='text-[#303030] grid text-center font-inter mt-3'>
@@ -186,6 +188,44 @@ const OneCartHero = () => {
                 width={300}
                 height={300}
                 className='w-full h-auto mix-blend-multiply opacity-90'
+              />
+            </div>
+          </div>
+          <div className='md:hidden block bg-[#890D8B14] rounded-2xl'>
+            <div className='  pt-8 md:py-0 py-5'>
+              <h5 className='text-[#570059] grid justify-center font-inter text-xl mt-7 md:text-[32px] font-bold'>
+                Become a OneSeller
+              </h5>
+              <p className='text-[#303030] grid text-center font-inter mt-3'>
+                Oneseller can sell products using live streaming functionality
+              </p>
+              <div className='relative grid gap-5 justify-center mt-10'>
+                <p className='text-[#554EBF] font-semibold font-inter italic'>
+                  Start with as low as £1
+                </p>
+                <button className='bg-[#570059]  w-48 md:mt-5 mt-6 rounded-xl text-white grid grid-flow-col items-center py-3 px-4 gap-2'>
+                  Register Now
+                  <span>
+                    <IoArrowForward />
+                  </span>
+                </button>
+                <span className='absolute top-0 left-5'>
+                  <Image
+                    src='/images/curve-arrow.png'
+                    alt='arrow'
+                    width={65}
+                    height={65}
+                  />
+                </span>
+              </div>
+            </div>
+            <div className='relative mt-10'>
+              <Image
+                src='/images/live-broadcast-mobile.png'
+                alt='live-stream'
+                width={300}
+                height={300}
+                className='w-full h-auto mix-blend-multiply ml-2 opacity-90'
               />
             </div>
           </div>
