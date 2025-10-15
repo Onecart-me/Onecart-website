@@ -29,7 +29,7 @@ const ChatBidBuy = ({ onNext, onPrev, currentIndex, total }: SectionProps) => {
               <p className='font-bold text-[#570059] underline text-lg md:text-xl'>
                 Chat, Bid, Buy
               </p>
-              <p className='text-[#000000] md:w-3/5 mx-auto font-inter mt-2'>
+              <p className='text-[#000000] md:w-3/5 mx-auto  font-inter mt-2'>
                 Jump into a live room that catches your eye. Ask questions in
                 the chat, watch close-up product reveals, and place instant bids
                 or fixed-price grabs with a single swipe. Secure checkout
@@ -47,7 +47,6 @@ const ChatBidBuy = ({ onNext, onPrev, currentIndex, total }: SectionProps) => {
           total={total}
         />
       </div>
-
       <div className='md:hidden block py-10'>
         <ImageTextStrip
           title='How it works?'

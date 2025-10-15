@@ -12,7 +12,7 @@ import {
 import { IconType } from 'react-icons';
 import { motion } from 'framer-motion';
 
-// --- Icon wrapper ---
+// --- Icon Wrapper ---
 const Icon = ({
   icon: IconComponent,
   ...props
@@ -48,92 +48,109 @@ const ImageTextStrip = ({
   total = 3,
 }: ImageTextProps) => {
   return (
-    <div className='flex flex-col-reverse md:grid md:grid-cols-2 justify-between items-center'>
-      <div className='grid grid-flow-col items-center'>
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className='flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-10 md:gap-16 overflow-hidden'
+    >
+      {/* === IMAGE SECTION === */}
+      <motion.div
+        key={`image-${currentIndex}`}
+        initial={{ opacity: 0, scale: 0.95, x: -40 }}
+        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        viewport={{ once: true }}
+        className='relative flex justify-center px-6 md:px-0'
+      >
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          width={imageWidth}
+          height={imageHeight}
+          style={{ objectFit: 'cover', height: '100%' }}
+          className='rounded-3xl shadow-lg md:mt-0 mt-7 opacity-95 mix-blend-multiply select-none'
+          priority
+        />
+
+        {/* === Vertical Navigator === */}
         <motion.div
-          key={`image-${currentIndex}`}
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className='z-0'
-        >
-          <Image
-            src={imageSrc}
-            alt={imageAlt}
-            width={imageWidth}
-            height={imageHeight}
-            style={{
-              objectFit: 'cover',
-              height: '100%',
-              mixBlendMode: 'multiply',
-            }}
-            className='mix-blend-multiply md:mt-0 mt-7 opacity-90 '
-            priority
-          />
-        </motion.div>
-        {/* === NAVIGATOR === */}
-        <div
-          style={{ position: 'relative', zIndex: 100 }}
-          className='md:grid hidden grid-flow-row bg-[#890D8B] items-center h-24 p-1 rounded-3xl ml-auto'
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className='hidden md:grid grid-flow-row bg-[#890D8B] items-center h-24 p-2 rounded-3xl absolute right-[-3rem] top-1/2 -translate-y-1/2 shadow-md'
         >
           <Icon
             icon={RawIoArrowUp}
-            className='text-white w-3 h-3 cursor-pointer z-10 hover:scale-110 transition-transform'
+            className='text-white w-4 h-4 cursor-pointer hover:scale-110 transition-transform'
             onClick={onPrev}
           />
 
-          {Array.from({ length: total }).map((_, i) =>
-            i === currentIndex ? (
-              <span key={i}>
-                <IoEllipse className='text-white w-3 h-3' />
-              </span>
-            ) : (
-              <span key={i}>
-                <IoEllipseOutline className='text-white w-3 h-3' />
-              </span>
-            )
-          )}
+          <div className='flex flex-col items-center gap-[2px]'>
+            {Array.from({ length: total }).map((_, i) =>
+              i === currentIndex ? (
+                <IoEllipse key={i} className='text-white w-3 h-3' />
+              ) : (
+                <IoEllipseOutline key={i} className='text-white w-3 h-3' />
+              )
+            )}
+          </div>
 
           <Icon
             icon={RawIoArrowDown}
-            className='text-white w-3 h-3 cursor-pointer z-10 hover:scale-110 transition-transform'
+            className='text-white w-4 h-4 cursor-pointer hover:scale-110 transition-transform'
             onClick={onNext}
           />
-        </div>
-      </div>
-      <div className='grid grid-flow-col items-center'>
-        <div>
-          <motion.div
-            key={currentIndex}
-            initial={{ opacity: 0, y: 20 }}
+        </motion.div>
+      </motion.div>
+
+      {/* === TEXT SECTION === */}
+      <motion.div
+        key={currentIndex}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, staggerChildren: 0.1 }}
+        viewport={{ once: true }}
+        className='grid gap-8 justify-center text-center px-6 md:px-0'
+      >
+        {title && (
+          <motion.h5
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className='grid gap-9 justify-center text-center'
+            transition={{ duration: 0.5 }}
+            className={`${
+              showTitleOnMobile ? 'grid' : 'hidden md:grid'
+            } mx-auto font-inter text-[#570059] font-bold text-2xl md:text-3xl`}
           >
-            {title && (
-              <h5
-                className={`${
-                  showTitleOnMobile ? 'grid' : 'hidden md:grid'
-                } mx-auto font-inter text-[#570059] font-bold text-2xl md:text-3xl`}
-              >
-                {title}
-              </h5>
-            )}
-            {contents.map((item, index) => (
-              <div
-                key={index}
-                className='grid gap-2 justify-center text-center'
-              >
-                <IoCheckmarkCircleOutline className='w-14 h-14 mx-auto text-[#890D8B]' />
-                <p className='font-inter text-lg  md:text-xl text-[#570059] mx-auto'>
-                  {item}
-                </p>
-              </div>
-            ))}
-          </motion.div>
-        </div>
-      </div>
-    </div>
+            {title}
+          </motion.h5>
+        )}
+
+        <motion.div
+          className='grid gap-8'
+          variants={{
+            visible: { transition: { staggerChildren: 0.15 } },
+          }}
+        >
+          {contents.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className='grid gap-2 justify-center text-center'
+            >
+              <IoCheckmarkCircleOutline className='w-12 h-12 mx-auto text-[#890D8B]' />
+              <p className='font-inter text-[#570059] mx-auto leading-relaxed'>
+                {item}
+              </p>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
+    </motion.section>
   );
 };
 

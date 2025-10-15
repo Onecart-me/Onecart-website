@@ -59,7 +59,7 @@ const PocketTheGoods = ({
               <p className='font-bold text-[#570059] underline  text-lg md:text-xl'>
                 Best finds and starting with as low as £1
               </p>
-              <p className='text-[#000000] md:w-3/5 mx-auto font-inter mt-2'>
+              <p className='text-[#000000] md:w-3/5 mx-auto  text-lg md:text-xl font-inter mt-2'>
                 Explore a wide range of trendy outfits and must-have
                 accessories. Find unbeatable deals that make fashion both
                 affordable and accessible.

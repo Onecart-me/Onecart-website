@@ -16,7 +16,7 @@ const ExcluciveAccess = ({
 }: SectionNavProps) => {
   return (
     <section className='md:bg-[linear-gradient(0deg,rgba(137,13,139,0)_-77.08%,rgba(137,13,139,0.08)_100%)] rounded-3xl '>
-      <div className=' hidden md:blockpy-10 md:p-0 p-5'>
+      <div className=' hidden md:block py-10 md:p-0 p-5'>
         <HeroImageTextStrip
           title='Why OneCart?'
           contents={[

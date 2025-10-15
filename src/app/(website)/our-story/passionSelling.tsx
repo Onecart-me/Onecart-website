@@ -5,12 +5,12 @@ const PassionSelling = () => {
   return (
     <section className=''>
       <div className=' flex flex-col-reverse md:grid md:grid-flow-col justify-between gap-5 md:mt-0 -mt-32'>
-        {/* <Image
-          src='/images/live-commerce.png'
+        <Image
+          src='/images/curve.png'
           alt='creative-image'
           width={109}
           height={101}
-        /> */}
+        />
         <div className='md:pt-80 md:mt-0 -mt-20  md:p-0 p-5'>
           <h5 className='text-[#570059] font-inter grid justify-center md:justify-end  md:mr-16 font-bold text-lg md:text-3xl'>
             {' '}
@@ -28,7 +28,7 @@ const PassionSelling = () => {
           src='/images/passion-screen.png'
           alt='creative-image'
           width={1966}
-          height={584}
+          height={984}
           className='md:block hidden'
         />
         <Image

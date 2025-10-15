@@ -16,6 +16,7 @@ export default function Home() {
       <div className='hidden md:block'>
         <WhyOneCart />
       </div>
+      {/* mobile */}
       <div className='px-3'>
         <div className='  bg-[linear-gradient(0deg,rgba(137,13,139,0)_-77.08%,rgba(137,13,139,0.08)_100%)] rounded-2xl  grid gap-6 md:hidden '>
           <UserDashboard />
@@ -29,10 +30,10 @@ export default function Home() {
           <ExcluciveAccess />
         </div>
       </div>
-
       <div className='hidden md:block'>
         <HowItWorks />
       </div>
+      {/* mobile */}
       <div className='px-3'>
         <div className=' grid bg-[#890D8B0D] rounded-2xl md:hidden px-3'>
           <TapInTune />
