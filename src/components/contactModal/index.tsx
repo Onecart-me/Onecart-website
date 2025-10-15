@@ -14,8 +14,6 @@ interface ContactModalProps {
 }
 
 const ContactModal: React.FC<ContactModalProps> = ({ member, onClose }) => {
-  if (!member) return null;
-
   // ✅ form state
   const [formData, setFormData] = useState({
     fullname: '',
@@ -23,7 +21,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ member, onClose }) => {
     phone: '',
     message: '',
   });
-
+  if (!member) return null;
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
