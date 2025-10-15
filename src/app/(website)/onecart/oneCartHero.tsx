@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { IoArrowForward } from 'react-icons/io5';
 
@@ -203,12 +204,15 @@ const OneCartHero = () => {
                 <p className='text-[#554EBF] font-semibold font-inter italic'>
                   Start with as low as £1
                 </p>
-                <button className='bg-[#570059]  w-48 md:mt-5 mt-6 rounded-xl text-white grid grid-flow-col items-center py-3 px-4 gap-2'>
-                  Register Now
-                  <span>
-                    <IoArrowForward />
-                  </span>
-                </button>
+                <Link href='/'>
+                  <button className='bg-[#570059] cursor-pointer hover:bg-purple-500  w-48 md:mt-5 mt-6 rounded-xl text-white grid grid-flow-col items-center py-3 px-4 gap-2'>
+                    Register Now
+                    <span>
+                      <IoArrowForward />
+                    </span>
+                  </button>
+                </Link>
+
                 <span className='absolute top-0 left-5'>
                   <Image
                     src='/images/curve-arrow.png'
