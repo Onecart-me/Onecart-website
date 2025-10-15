@@ -11,16 +11,16 @@ interface SectionProps {
 
 const ChatBidBuy = ({ onNext, onPrev, currentIndex, total }: SectionProps) => {
   return (
-    <section
-      style={{
-        backgroundImage: 'var(--bg-hero-section)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        isolation: 'isolate',
-      }}
-      className='md:rounded-3xl px-10'
-    >
-      <div className='md:block hidden py-10'>
+    <section className='md:rounded-3xl px-10'>
+      <div
+        style={{
+          backgroundImage: 'var(--bg-hero-section)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          isolation: 'isolate',
+        }}
+        className='md:block hidden py-10'
+      >
         <ImageTextStrip
           title='How it works?'
           contents={[
@@ -47,6 +47,7 @@ const ChatBidBuy = ({ onNext, onPrev, currentIndex, total }: SectionProps) => {
           total={total}
         />
       </div>
+
       <div className='md:hidden block py-10'>
         <ImageTextStrip
           title='How it works?'

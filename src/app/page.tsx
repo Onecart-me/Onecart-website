@@ -33,10 +33,18 @@ export default function Home() {
       <div className='hidden md:block'>
         <HowItWorks />
       </div>
-      <div className=' grid md:hidden px-3'>
-        <TapInTune />
-        <ChatBidBuy />
-        <PocketTheGoods />
+      <div className='px-3'>
+        <div className=' grid bg-[#890D8B0D] rounded-2xl md:hidden px-3'>
+          <TapInTune />
+          <div className='px-28 -mt-3'>
+            <hr className='bg-[#890D8B4D]' />
+          </div>
+          <ChatBidBuy />
+          <div className='px-28 -mt-3'>
+            <hr className='bg-[#890D8B4D]' />
+          </div>
+          <PocketTheGoods />
+        </div>
       </div>
 
       <OneCartTieUps />

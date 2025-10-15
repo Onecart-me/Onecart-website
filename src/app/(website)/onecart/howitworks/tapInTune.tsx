@@ -15,16 +15,16 @@ const TapInTune = ({
   total,
 }: SectionNavProps) => {
   return (
-    <section
-      style={{
-        backgroundImage: 'var(--bg-hero-section)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        isolation: 'isolate',
-      }}
-      className='rounded-3xl px-10'
-    >
-      <div className=' hidden md:block py-10 md:px-0 '>
+    <section className='rounded-3xl px-10'>
+      <div
+        style={{
+          backgroundImage: 'var(--bg-hero-section)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          isolation: 'isolate',
+        }}
+        className=' hidden md:block py-10 md:px-0 '
+      >
         <ImageTextStrip
           title='How it works?'
           showTitleOnMobile

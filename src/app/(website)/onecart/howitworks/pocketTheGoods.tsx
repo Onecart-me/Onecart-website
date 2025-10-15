@@ -16,16 +16,16 @@ const PocketTheGoods = ({
   total,
 }: SectionNavProps) => {
   return (
-    <section
-      style={{
-        backgroundImage: 'var(--bg-hero-section)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        isolation: 'isolate',
-      }}
-      className='rounded-3xl px-10'
-    >
-      <div className=' md:block hidden py-10 md:px-0 px-5'>
+    <section className='rounded-3xl px-10'>
+      <div
+        style={{
+          backgroundImage: 'var(--bg-hero-section)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          isolation: 'isolate',
+        }}
+        className=' md:block hidden py-10 md:px-0 px-5'
+      >
         <ImageTextStrip
           title='How it works?'
           contents={[
@@ -56,7 +56,7 @@ const PocketTheGoods = ({
           title='How it works?'
           contents={[
             <div key='content-1'>
-              <p className='font-bold text-[#570059] underline text-xl'>
+              <p className='font-bold text-[#570059] underline  text-lg md:text-xl'>
                 Best finds and starting with as low as £1
               </p>
               <p className='text-[#000000] md:w-3/5 mx-auto font-inter mt-2'>
