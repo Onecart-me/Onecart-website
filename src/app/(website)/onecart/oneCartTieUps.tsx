@@ -4,8 +4,8 @@ import React from 'react';
 
 const OneCartTieUps = () => {
   return (
-    <section>
-      <div className='px-10 rounded-3xl bg-[#FFF2FF80] mt-5 mb-5'>
+    <section className='px-3 md:-mt-7'>
+      <div className=' rounded-3xl bg-[#FFF2FF80] mt-5 mb-5'>
         <div className='grid py-20 gap-4'>
           <h5 className='font-bold font-inter md:text-4xl mx-auto text-[#570059]'>
             Onecart Tie-ups

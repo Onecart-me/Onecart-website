@@ -67,12 +67,11 @@ const ImageTextStrip = ({
               height: '100%',
               mixBlendMode: 'multiply',
             }}
-            className='mix-blend-multiply md:mt-0 mt-7 opacity-90 rounded-2xl select-none'
+            className='mix-blend-multiply md:mt-0 mt-7 opacity-90 '
             priority
           />
         </motion.div>
         {/* === NAVIGATOR === */}
-
         <div
           style={{ position: 'relative', zIndex: 100 }}
           className='md:grid hidden grid-flow-row bg-[#890D8B] items-center h-24 p-1 rounded-3xl ml-auto'

@@ -5,7 +5,7 @@ import { IoArrowForward } from 'react-icons/io5';
 
 const OneCartHero = () => {
   return (
-    <section className='px-3'>
+    <section className='px-3 pt-3'>
       <div className='grid md:grid-cols-2 gap-4 items-stretch'>
         <div
           style={{

@@ -11,7 +11,7 @@ import PocketTheGoods from './(website)/onecart/howitworks/pocketTheGoods';
 
 export default function Home() {
   return (
-    <section className='grid gap-5 pt-3 overflow-x-clip'>
+    <section className='grid gap-3 overflow-x-clip'>
       <OneCartHero />
       <div className='hidden md:block'>
         <WhyOneCart />
@@ -46,7 +46,6 @@ export default function Home() {
           <PocketTheGoods />
         </div>
       </div>
-
       <OneCartTieUps />
     </section>
   );

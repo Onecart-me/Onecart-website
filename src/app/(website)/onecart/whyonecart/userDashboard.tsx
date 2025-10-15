@@ -23,9 +23,9 @@ const UserDashboard = ({
           showTitleOnMobile
           contents={[
             <div key='content-1'>
-              <h5 className='font-bold text-[#570059] underline  text-lg md:text-xl'>
+              <p className='font-bold text-[#570059] underline  text-lg md:text-xl'>
                 All in one Dashboard
-              </h5>
+              </p>
               <p className='text-[#000000] md:w-3/5 mx-auto font-inter mt-2'>
                 Our dashboard identifies market patterns, projects likely trends
                 from historical and real-time data, and presents a detailed view
@@ -46,7 +46,7 @@ const UserDashboard = ({
           total={total}
         />
       </div>
-      <div className='block md:hidden p-5'>
+      <div className='block md:hidden'>
         <HeroImageTextStrip
           title='Why OneCart?'
           showTitleOnMobile

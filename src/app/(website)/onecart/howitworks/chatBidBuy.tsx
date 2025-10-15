@@ -11,7 +11,7 @@ interface SectionProps {
 
 const ChatBidBuy = ({ onNext, onPrev, currentIndex, total }: SectionProps) => {
   return (
-    <section className='md:rounded-3xl px-10'>
+    <section className=''>
       <div
         style={{
           backgroundImage: 'var(--bg-hero-section)',
@@ -19,7 +19,7 @@ const ChatBidBuy = ({ onNext, onPrev, currentIndex, total }: SectionProps) => {
           backgroundPosition: 'center',
           isolation: 'isolate',
         }}
-        className='md:block hidden py-10'
+        className='md:block md:rounded-3xl p-4 hidden py-10'
       >
         <ImageTextStrip
           title='How it works?'

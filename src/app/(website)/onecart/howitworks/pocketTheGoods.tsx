@@ -16,7 +16,7 @@ const PocketTheGoods = ({
   total,
 }: SectionNavProps) => {
   return (
-    <section className='rounded-3xl px-10'>
+    <section className=''>
       <div
         style={{
           backgroundImage: 'var(--bg-hero-section)',
@@ -24,7 +24,7 @@ const PocketTheGoods = ({
           backgroundPosition: 'center',
           isolation: 'isolate',
         }}
-        className=' md:block hidden py-10 md:px-0 px-5'
+        className=' md:block md:rounded-3xl p-4 hidden py-10 md:px-0 px-5'
       >
         <ImageTextStrip
           title='How it works?'

@@ -16,7 +16,7 @@ const HowItWorks = () => {
   const CurrentComponent = components[current];
 
   return (
-    <div className='relative px-3'>
+    <div className='relative md:-mt-1 px-2'>
       <CurrentComponent
         key={current}
         onNext={next}

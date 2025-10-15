@@ -15,7 +15,7 @@ const TapInTune = ({
   total,
 }: SectionNavProps) => {
   return (
-    <section className='rounded-3xl px-10'>
+    <section className=''>
       <div
         style={{
           backgroundImage: 'var(--bg-hero-section)',
@@ -23,7 +23,7 @@ const TapInTune = ({
           backgroundPosition: 'center',
           isolation: 'isolate',
         }}
-        className=' hidden md:block py-10 md:px-0 '
+        className=' hidden md:block py-10 md:rounded-3xl p-4 md:px-0 '
       >
         <ImageTextStrip
           title='How it works?'
