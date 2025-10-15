@@ -5,7 +5,7 @@ const OurMission = () => {
   return (
     <section className='px-4 '>
       <div className='bg-[linear-gradient(168.94deg,_#DD0CED_1.55%,_#890D8B_30.45%,_#701C8F_67.32%,_#403B98_98.7%)] rounded-2xl py-6'>
-        <div className='grid md:grid-cols-2 md:pt-10'>
+        <div className=' flex flex-col-reverse md:grid md:grid-cols-2 md:pt-10'>
           <div className='md:ml-9 -mb-6'>
             <span>
               <Image
@@ -17,7 +17,7 @@ const OurMission = () => {
               />
             </span>
           </div>
-          <div className='p-8 md:mt-0 mt-8'>
+          <div className='p-8'>
             <h5 className='text-[#FFFFFF] font-bold grid  md:justify-end justify-center font-inter text-lg md:text-[2.5rem] md:w-8/12'>
               Our Mission
             </h5>

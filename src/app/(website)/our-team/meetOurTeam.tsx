@@ -31,8 +31,8 @@ const MeetOurTeam = () => {
   return (
     <section className='bg-[#FAFAFA] relative'>
       <div className='grid md:px-20 px-5 py-10'>
-        <div className='grid gap-5'>
-          <h5 className='text-[#890D8B] font-semibold font-inter border border-[#890D8B] px-4 py-4 w-40'>
+        <div className='grid md:justify-start justify-center md:text-left text-center  gap-5'>
+          <h5 className='text-[#890D8B] font-semibold font-inter md:mx-0 mx-auto border border-[#890D8B] px-4 py-4 w-40'>
             Meet Our Team
           </h5>
           <p className='font-semibold font-inter text-3xl text-[#890D8B]'>
@@ -43,17 +43,17 @@ const MeetOurTeam = () => {
             connecting with the world.
           </p>
         </div>
-        <div className='grid md:grid-cols-4 md:justify-center md:gap-8 mt-4'>
+        <div className='grid md:grid-cols-4 md:justify-center  md:gap-8 mt-4'>
           {OUR_TEAM_SCHEMA.map((r, i) => (
             <div key={i}>
               <Image
-                className='mt-8 rounded-2xl w-full'
+                className='mt-8 w-full rounded-2xl md:mx-0 mx-auto'
                 src={r.image}
                 alt={r.name}
                 width={258}
                 height={318}
               />
-              <div className='grid grid-flow-col justify-between mt-4 items-center w-max gap-44 md:gap-20'>
+              <div className='grid grid-flow-col mx-auto  md:mx-0 justify-between mt-4 items-center  w-max-[28px] md:w-max  md:gap-20'>
                 <p className='text-[#000000] font-medium text-sm md:text-lg md:w-[181px]'>
                   {r.name}
                 </p>
@@ -66,7 +66,9 @@ const MeetOurTeam = () => {
                   />
                 </Link>
               </div>
-              <p className='text-[#696969] font-inter'>{r.role}</p>
+              <p className='text-[#696969] text-sm md:text-lg  font-inter'>
+                {r.role}
+              </p>
               <div className='grid mx-auto mt-2 '>
                 <Button
                   className='text-[#890D8B] rounded-xl cursor-pointer border border-[#890D8B] py-3 px-7 mt-2 mx-auto'

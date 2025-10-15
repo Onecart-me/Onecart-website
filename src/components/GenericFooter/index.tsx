@@ -8,14 +8,14 @@ const GenericFooter = () => {
   return (
     <section className='bg-[#FAFAFA]'>
       <div className='py-10'>
-        <div className='grid md:grid-cols-4 md:gap-60 grid-cols-2 px-10 '>
+        <div className='grid  md:grid-cols-4 md:gap-60 grid-cols-2 gap-20 md:px-10 px-5 '>
           {footerSectionSchema.map((r, i) => (
             <div key={r.title} className=' grid gap-5 lg:mt-0 mt-5'>
               <h6 className='font-bold font-inter text-lg text-[#000000]'>
                 {r.title}
               </h6>
               <div className='grid gap-4 text-[#000000] font-inter pt-2'>
-                <ul className='space-y-3'>
+                <ul className='space-y-3 '>
                   {r.links.map((link) => (
                     <li key={link.label}>
                       <Link
@@ -33,7 +33,7 @@ const GenericFooter = () => {
         </div>
       </div>
       <hr />
-      <div className='grid md:grid-flow-col py-5 justify-between  gap-2 items-center px-10'>
+      <div className='grid md:grid-flow-col py-5 justify-between  gap-2 items-center md:px-10 px-5'>
         <Image src='/onecart-logo.png' alt='logo' height={50} width={50} />
         <h6 className='text-sm font-inter'>
           Copyrights @ 2025 | Privacy Policy | Terms and Conditions

@@ -8,7 +8,7 @@ import PassionSelling from './passionSelling';
 
 export default function OneStory() {
   return (
-    <section className='grid gap-3'>
+    <section className='grid gap-3 '>
       <AboutUs />
       <OurVision />
       <OurMission />

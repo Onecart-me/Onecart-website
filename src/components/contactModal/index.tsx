@@ -14,7 +14,6 @@ interface ContactModalProps {
 }
 
 const ContactModal: React.FC<ContactModalProps> = ({ member, onClose }) => {
-  // ✅ form state
   const [formData, setFormData] = useState({
     fullname: '',
     email: '',
@@ -31,18 +30,15 @@ const ContactModal: React.FC<ContactModalProps> = ({ member, onClose }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    // ✅ TODO: hook this to your API or email service
     console.log('Form submitted:', formData);
 
-    // Optional: show a success message or close modal
     alert('Thank you! Your message has been sent.');
     onClose();
   };
 
   return (
     <section
-      className='fixed inset-0 z-50 flex items-center justify-center bg-[rgba(0,0,0,0.3)] backdrop-blur-sm'
+      className='fixed inset-0 z-50 flex items-center md:px-0 px-3 justify-center bg-[rgba(0,0,0,0.3)] backdrop-blur-sm'
       onClick={onClose}
     >
       <motion.div
@@ -51,11 +47,11 @@ const ContactModal: React.FC<ContactModalProps> = ({ member, onClose }) => {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.95, y: 20 }}
         transition={{ duration: 0.25, ease: 'easeOut' }}
-        className='relative bg-white rounded-2xl shadow-2xl p-2 md:p-8 w-full md:max-w-2xl mx-auto text-center flex flex-col items-center'
+        className='relative bg-white rounded-2xl shadow-2xl p-3 md:p-8 md:mt-0 mt-4  md:max-w-2xl mx-auto text-center flex flex-col items-center'
       >
         <button
           onClick={onClose}
-          className='absolute top-3 right-3 text-gray-600 hover:text-black text-xl font-bold'
+          className='absolute top-3  right-3 text-gray-600 hover:text-black text-xl font-bold'
         >
           ✕
         </button>
@@ -64,7 +60,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ member, onClose }) => {
           onSubmit={handleSubmit}
           className=' justify-between md:gap-7 w-full text-left font-inter'
         >
-          <div className='grid md:grid-cols-2 md:gap-7'>
+          <div className='grid md:grid-cols-2  md:gap-7'>
             <div>
               <div className='grid  gap-1 '>
                 <h5 className='text-[#000000] font-semibold font-inter text-2xl md:text-4xl '>
