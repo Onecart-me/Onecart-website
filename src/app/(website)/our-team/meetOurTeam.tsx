@@ -43,17 +43,17 @@ const MeetOurTeam = () => {
             connecting with the world.
           </p>
         </div>
-        <div className='grid md:grid-cols-4 justify-center md:gap-8 mt-4'>
+        <div className='grid md:grid-cols-4 md:justify-center md:gap-8 mt-4'>
           {OUR_TEAM_SCHEMA.map((r, i) => (
             <div key={i}>
               <Image
-                className='mt-8 rounded-2xl'
+                className='mt-8 rounded-2xl w-full'
                 src={r.image}
                 alt={r.name}
                 width={258}
                 height={318}
               />
-              <div className='grid grid-flow-col mt-4 items-center w-max gap-24 md:gap-11'>
+              <div className='grid grid-flow-col justify-between mt-4 items-center w-max gap-44 md:gap-20'>
                 <p className='text-[#000000] font-medium text-sm md:text-lg md:w-[181px]'>
                   {r.name}
                 </p>
@@ -67,9 +67,9 @@ const MeetOurTeam = () => {
                 </Link>
               </div>
               <p className='text-[#696969] font-inter'>{r.role}</p>
-              <div className='mx-auto mt-2 '>
+              <div className='grid mx-auto mt-2 '>
                 <Button
-                  className='text-[#890D8B] rounded-xl border border-[#890D8B] py-3 px-7 mt-2 mx-auto'
+                  className='text-[#890D8B] rounded-xl cursor-pointer border border-[#890D8B] py-3 px-7 mt-2 mx-auto'
                   size={'sm'}
                   variant={'primary'}
                   onClick={() => handleOpenModal(r)}
@@ -81,8 +81,6 @@ const MeetOurTeam = () => {
           ))}
         </div>
       </div>
-
-      {/* ✅ Modal */}
       {openModal && selectedMember && (
         <TeamModal member={selectedMember} onClose={handleCloseModal} />
       )}

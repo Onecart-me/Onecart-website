@@ -1,7 +1,20 @@
+'use client';
+
 import { Button } from '@/components/GenericButton';
-import React from 'react';
+import ContactModal from '@/components/contactModal';
+import React, { useState } from 'react';
 
 const ContactUs = () => {
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
   return (
     <section className='px-4 mb-4'>
       <div
@@ -19,12 +32,19 @@ const ContactUs = () => {
           <Button
             size={'sm'}
             variant={'primary'}
-            className='text-[#FCFCFD] font-inter font-bold bg-[#890D8B] rounded-xl py-3 mt-7'
+            className='text-[#FCFCFD] font-inter cursor-pointer font-bold bg-[#890D8B] rounded-xl py-3 mt-7'
+            onClick={handleOpenModal}
           >
             Contact Us →
           </Button>
         </div>
       </div>
+      {openModal && (
+        <ContactModal
+          member={{ name: 'Contact Us' }}
+          onClose={handleCloseModal}
+        />
+      )}
     </section>
   );
 };

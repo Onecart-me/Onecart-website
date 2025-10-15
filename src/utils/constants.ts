@@ -160,48 +160,49 @@ export const FAQ_SCHEMA = [
     id: 1,
     question: 'What is Onecart?',
     answer:
-      'The Undergraduate Empowerment and Sensitization Scheme (UESS) is a transformative platform designed to bridge the gap between academia and industry, empowering Nigerian undergraduates with the skills, knowledge, and mentorship they need to thrive. We believe in building a generation of future leaders and entrepreneurs who can drive positive change in their communities and the nation.',
+      'Onecart is a live-streaming marketplace app where users can join real-time shows, discover unique products, and shop or sell instantly during interactive live sessions.',
   },
   {
     id: 2,
     question: 'How is Onecart different from regular shopping apps?',
     answer:
-      'Our goal is to empower 100,000 undergraduates across 20 higher institutions in the next five years, creating a ripple effect of positive change throughout Nigeria.',
+      'Unlike traditional marketplaces, OneCart offers a live shopping experience, bidding, instant purchases, and lets buyers interact directly with sellers and fellow shoppers during live streaming.',
   },
   {
     id: 3,
     question: 'Do I need an account to make a purchase on Onecart?',
     answer:
-      'To ensure we empower our beneficiaries, we have set up three empowerment structures. They are:',
+      'Yes, you’ll need to sign up for a free account to participate in live rooms, chat, and place orders.',
   },
   {
     id: 4,
     question: 'How do I buy something during a live stream?',
     answer:
-      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+      'Simply tap the product link or “Buy Now” button as it appears during a live stream. Complete checkout securely within the app.',
   },
   {
     id: 5,
     question: 'Can I ask questions before purchasing?',
-    answer: 'You can be a part of UESS through any of these 3 ways',
+    answer:
+      'Absolutely! Use the live chat feature to ask sellers questions about products, shipping, or anything else before making a purchase. Most of them are already mentioned in the scheduled description about the shopping.',
   },
   {
     id: 6,
     question: 'Is my payment information secure?',
     answer:
-      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+      'Yes. Onecart uses secure payment gateways to protect your information. Your payment details are never shared with sellers',
   },
   {
     id: 7,
     question: 'How do I track my order?',
     answer:
-      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+      'You can track your purchases within the OneCart app—from confirmation through to delivery. You will also get delivery information for the products.',
   },
   {
     id: 8,
     question: 'What if there’s a problem with my order?',
     answer:
-      'It costs absolutely nothing to sign up on UESS and have access to our empowerment materials and mentorship structures. Nothing! It is absolutely FREE for undergraduates! So sign up today!',
+      'Contact Onecart support directly through the app for help with refunds, product issues, or shipping concerns.',
   },
 ];
 
