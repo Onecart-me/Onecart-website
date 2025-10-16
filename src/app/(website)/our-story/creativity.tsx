@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Creativity = () => {
   return (
-    <section className='py-20'>
+    <section className=''>
       <div className='grid md:grid-flow-col justify-between gap-5'>
         <Image
           src='/images/creative-image.png'
@@ -19,12 +19,12 @@ const Creativity = () => {
           height={561}
           className='md:hidden block'
         />
-        <div className='md:pt-40'>
+        <div className='md:pt-64'>
           <span>
             <Image
               src='/images/live-broadcast.png'
               alt='live-broadcast'
-              width={264}
+              width={164}
               height={264}
               className=' md:block hidden'
             />

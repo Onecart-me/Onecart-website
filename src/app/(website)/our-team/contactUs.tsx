@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@/components/GenericButton';
+import { Button } from '@/components/Button';
 import ContactModal from '@/components/contactModal';
 import React, { useState } from 'react';
 

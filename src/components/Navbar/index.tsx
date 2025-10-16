@@ -37,10 +37,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link href='/'>
-                <button
-                  style={{ color: '#fff' }}
-                  className='font-inter !text-white cursor-pointer font-bold rounded-xl py-3 px-5 bg-[linear-gradient(91.9deg,#DD0CED_-5.47%,#890D8B_24.94%,#701C8F_63.75%,#403B98_96.79%)]'
-                >
+                <button className='font-inter text-white cursor-pointer hover:bg-fuchsia-900 font-bold rounded-xl py-3 px-5 bg-[linear-gradient(91.9deg,#DD0CED_-5.47%,#890D8B_24.94%,#701C8F_63.75%,#403B98_96.79%)]'>
                   Dashboard Login
                 </button>
               </Link>

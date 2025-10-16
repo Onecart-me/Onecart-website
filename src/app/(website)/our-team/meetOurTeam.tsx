@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { OUR_TEAM_SCHEMA } from '@/utils/constants';
-import { Button } from '@/components/GenericButton';
+import { Button } from '@/components/Button';
 import TeamModal from '@/components/TeamModal';
 
 interface Member {

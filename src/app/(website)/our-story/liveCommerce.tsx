@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const LiveCommerce = () => {
   return (
-    <section className='py-20'>
-      <div className='grid md:grid-flow-col justify-between md:gap-5 md:mt-0 -mt-9'>
+    <section className='md:mb-4'>
+      <div className='grid md:grid-flow-col justify-between md:gap-5 md:mt-0 mt-9'>
         <Image
           src='/images/live-commerce.png'
           alt='creative-image'
@@ -19,12 +19,12 @@ const LiveCommerce = () => {
           height={561}
           className='md:hidden block'
         />
-        <div className=''>
+        <div className='md:mt-28 md:ml-20'>
           <span>
             <Image
               src='/images/live-commerce-image.png'
               alt='live-broadcast'
-              width={264}
+              width={164}
               height={264}
               className='md:block hidden'
             />

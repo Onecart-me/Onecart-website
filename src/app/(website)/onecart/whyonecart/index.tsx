@@ -6,7 +6,7 @@ import ExclusiveAccess from './exclusiveAccess';
 
 const WhyOneCart = () => {
   const [current, setCurrent] = useState(0);
-  const components = [UserDashboard, BestFinds, ExclusiveAccess];
+  const components = [UserDashboard, ExclusiveAccess , BestFinds];
 
   const next = () => setCurrent((prev) => (prev + 1) % components.length);
   const prev = () =>

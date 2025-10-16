@@ -1,5 +1,4 @@
 'use client';
-
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
@@ -28,7 +27,7 @@ const Totopbtn = () => {
     <button
       onClick={handleClick}
       aria-label='Scroll to top'
-      className={`fixed z-50 bottom-6 right-4 flex flex-col items-center justify-center p-2 transition-opacity duration-300 ${
+      className={`fixed z-50 bottom-9 right-4 flex flex-col items-center justify-center p-2 transition-opacity duration-300 ${
         isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
     >

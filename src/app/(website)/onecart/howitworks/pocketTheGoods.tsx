@@ -29,18 +29,19 @@ const PocketTheGoods = ({
         <ImageTextStrip
           title='How it works?'
           contents={[
-            'AI-Powered Dashboard',
+            'Tap In & Tune In',
+            'Chat, Bid, Buy',
             <div key='content-1'>
               <p className='font-bold text-[#570059] underline text-xl'>
-                Best finds and starting with as low as £1
+                Pocket the Goods
               </p>
-              <p className='text-[#000000] w-3/5 mx-auto font-inter mt-2'>
-                Explore a wide range of trendy outfits and must-have
-                accessories. Find unbeatable deals that make fashion both
-                affordable and accessible.
+              <p className='text-[#000000] md:w-3/5 mx-auto font-inter mt-2'>
+                Win the drop? Nice one. Your order is automatically confirmed,
+                securely paid, and shipped to your doorstep. Track it in the app
+                while you hop into the next show—because the thrill of the hunt
+                never sleeps on OneCart.
               </p>
             </div>,
-            'Exclusive Access',
           ]}
           imageSrc='/images/payment.png'
           imageWidth={600}
@@ -57,12 +58,13 @@ const PocketTheGoods = ({
           contents={[
             <div key='content-1'>
               <p className='font-bold text-[#570059] underline  text-lg md:text-xl'>
-                Best finds and starting with as low as £1
+                Pocket the Goods
               </p>
               <p className='text-[#000000] md:w-3/5 mx-auto  text-lg md:text-xl font-inter mt-2'>
-                Explore a wide range of trendy outfits and must-have
-                accessories. Find unbeatable deals that make fashion both
-                affordable and accessible.
+                Win the drop? Nice one. Your order is automatically confirmed,
+                securely paid, and shipped to your doorstep. Track it in the app
+                while you hop into the next show—because the thrill of the hunt
+                never sleeps on OneCart.
               </p>
             </div>,
           ]}

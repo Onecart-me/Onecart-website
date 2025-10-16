@@ -163,15 +163,18 @@ const OneCartHero = () => {
                 <p className='text-[#554EBF] font-semibold font-inter italic'>
                   Start with as low as £1
                 </p>
-                <button
-                  style={{ color: '#fff' }}
-                  className='bg-[#570059]  w-48 md:mt-5 mt-6 rounded-xl text-white grid grid-flow-col items-center py-3 px-4 gap-2'
-                >
-                  Register Now
-                  <span>
-                    <IoArrowForward />
-                  </span>
-                </button>
+                <Link href='/'>
+                  <button
+                    style={{ color: '#fff' }}
+                    className='bg-[#570059] hover:bg-fuchsia-900 cursor-pointer w-48 md:mt-5 mt-6 rounded-xl text-white grid grid-flow-col items-center py-3 px-4 gap-2'
+                  >
+                    Register Now
+                    <span>
+                      <IoArrowForward />
+                    </span>
+                  </button>
+                </Link>
+
                 <span className='absolute top-0 md:left-4 left-2'>
                   <Image
                     src='/images/curve-arrow.png'

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import GenericFooter from '@/components/GenericFooter';
 import Navbar from '@/components/Navbar';
 import Totopbtn from './(website)/toTopBtn';
+import Footer from '@/components/Footer';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -37,7 +37,7 @@ export default function RootLayout({
           <Navbar />
           {/* Pass children directly without extra container padding */}
           <main className='flex-grow w-full'>{children}</main>
-          <GenericFooter />
+          <Footer />
         </div>
         <Totopbtn />
       </body>
