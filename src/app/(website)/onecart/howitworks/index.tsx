@@ -7,7 +7,7 @@ import PocketTheGoods from './pocketTheGoods';
 
 const HowItWorks = () => {
   const [current, setCurrent] = useState(0);
-  const components = [TapInTune, PocketTheGoods, ChatBidBuy];
+  const components = [TapInTune, ChatBidBuy, PocketTheGoods];
 
   const next = () => setCurrent((prev) => (prev + 1) % components.length);
   const prev = () =>
