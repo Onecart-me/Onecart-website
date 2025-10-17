@@ -73,20 +73,18 @@ const ImageTextStrip = ({
           className='rounded-3xl shadow-lg md:mt-0 mt-7 opacity-95 mix-blend-multiply select-none'
           priority
         />
-
         {/* === Vertical Navigator === */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className='hidden md:grid grid-flow-row bg-[#890D8B] items-center h-24 p-2 rounded-3xl absolute right-[-3rem] top-1/2 -translate-y-1/2 shadow-md'
+          className='hidden md:grid grid-flow-row bg-[#890D8B] items-center h-24 p-1 rounded-3xl absolute right-[-3rem] top-1/2 -translate-y-1/2 shadow-md'
         >
           <Icon
             icon={RawIoArrowUp}
             className='text-white w-4 h-4 cursor-pointer hover:scale-110 transition-transform'
             onClick={onPrev}
           />
-
           <div className='flex flex-col items-center gap-[2px]'>
             {Array.from({ length: total }).map((_, i) =>
               i === currentIndex ? (
@@ -96,7 +94,6 @@ const ImageTextStrip = ({
               )
             )}
           </div>
-
           <Icon
             icon={RawIoArrowDown}
             className='text-white w-4 h-4 cursor-pointer hover:scale-110 transition-transform'
@@ -104,7 +101,6 @@ const ImageTextStrip = ({
           />
         </motion.div>
       </motion.div>
-
       {/* === TEXT SECTION === */}
       <motion.div
         key={currentIndex}

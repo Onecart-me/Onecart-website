@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 
 interface Member {
   name: string;
@@ -114,19 +116,21 @@ const ContactModal: React.FC<ContactModalProps> = ({ member, onClose }) => {
               <div className='grid mt-3 gap-1'>
                 <label
                   htmlFor='phone'
-                  className='text-sm font-medium text-gray-700'
+                  className='text-lg font-inter font-medium text-[#000000]'
                 >
                   Phone Number
                 </label>
-                <input
-                  id='phone'
-                  name='phone'
-                  type='tel'
+                <PhoneInput
+                  country={'ng'}
                   value={formData.phone}
-                  onChange={handleChange}
-                  placeholder='Enter your phone number'
-                  required
-                  className='border border-[#EEF4FF] bg-[#F9F9F9] rounded-lg p-2 focus:outline-none focus:border-[#890D8B]'
+                  onChange={(phone) => setFormData({ ...formData, phone })}
+                  inputClass='border !border-[#EEF4FF] !bg-[#F9F9F9]  !rounded-lg p-2 focus:outline-none focus:border-[#EEF4FF]'
+                  containerClass='relative w-full'
+                  inputProps={{
+                    required: true,
+                    name: 'phone',
+                    id: 'phone',
+                  }}
                 />
               </div>
             </div>

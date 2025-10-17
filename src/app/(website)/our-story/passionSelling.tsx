@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const PassionSelling = () => {
   return (
-    <section>
+    <section className='md:mb-5'>
       <div className='flex flex-col-reverse md:grid md:grid-flow-col justify-between gap-5 md:mt-0 -mt-32'>
         {/* Curve Image */}
         <Image

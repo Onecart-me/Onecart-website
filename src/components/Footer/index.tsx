@@ -32,9 +32,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-
       <hr className='border-[#E6E6E6]' />
-
       {/* Footer Bottom */}
       <div className='flex flex-col md:flex-row justify-between items-center py-6 md:px-16 px-6 gap-4'>
         <div className='flex items-center gap-2'>
@@ -45,7 +43,6 @@ const Footer = () => {
             width={40}
           />
         </div>
-
         <p className='text-sm text-center md:text-left text-[#555]'>
           © {new Date().getFullYear()} Onecart. All rights reserved. |{' '}
           <Link href='/privacy' className='hover:text-[#890D8B]'>

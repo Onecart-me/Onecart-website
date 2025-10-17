@@ -101,8 +101,8 @@ export const footerSectionSchema = [
   {
     title: 'Company Info',
     links: [
-      { label: 'Our Story', href: '/' },
-      { label: 'Our Team', href: '/' },
+      { label: 'Our Story', href: '/our-story' },
+      { label: 'Our Team', href: '/our-team' },
       { label: 'Contact Us', href: '/' },
     ],
   },
