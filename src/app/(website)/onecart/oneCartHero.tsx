@@ -26,7 +26,7 @@ const OneCartHero = () => {
               style={{ color: '#fff' }}
               className='grid font-inter text-xl text-white font-semibold justify-center italic mx-auto '
             >
-              For Sharpness & OneSellers
+              For Shoppers & Onesellers
             </p>
             <span className='grid justify-center mx-auto mb-1 '>
               <Image

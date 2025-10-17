@@ -70,7 +70,7 @@ const ImageTextStrip = ({
           width={imageWidth}
           height={imageHeight}
           style={{ objectFit: 'cover', height: '100%' }}
-          className='rounded-3xl shadow-lg md:mt-0 mt-7 opacity-95 mix-blend-multiply select-none'
+          className='rounded-3xl  md:mt-0 mt-7  '
           priority
         />
         {/* === Vertical Navigator === */}

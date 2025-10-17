@@ -21,7 +21,7 @@ export const OUR_TEAM_SCHEMA = [
     link: '/',
     image: '/images/pratik.png',
     description:
-      'Pratik combines his expertise in business and technology to craft a seamless experience . When he’s not busy steering the ship, you can find him exploring local food markets, experimenting with new recipes, or brainstorming the next big idea over a cup of coffee.A curious thinker and passionate builder, Pratik thrives at the intersection of creativity, culture, and technology — always looking for new ways to turn bold ideas into meaningful realities.',
+      'Pratik blends business acumen with hands-on tech leadership, with 10+ years scaling startups across India, the UAE, and the UK. From launching GoodsDeck (Uber-for-trucks logistics) to leading product at Genius Teacher, LoadMe, and Fero.ai, he brings expertise in zero-to-one discovery and go-to-market strategy. Now building OneCart, Pratik focuses on real-time commerce, trust, and community.Outside of work, Pratik explores food markets, experiments with recipes, and sketches ideas over coffee. On weekends, he recharges through football, boxing, and running.',
   },
   {
     name: 'Minakhi Das',
@@ -29,7 +29,7 @@ export const OUR_TEAM_SCHEMA = [
     link: '/',
     image: '/images/minakhi.png',
     description:
-      'A creative explorer at heart, she leads with vision and intention — turning bold ideas into intuitive experiences. With deep expertise in UX, UI, and brand design, she blends imagination with strategy to craft solutions that are both meaningful and beautifully executed.Wanderlust-fueled and curiosity-driven, she brings a global perspective to every pixel and process. Whether shaping a product interface or building a brand from the ground up, her work is guided by empathy, creativity, and a deep understanding of human experience.',
+      'An IITian and Architect by training, Minakhi blends creativity with strategy to craft intuitive, human-centered experiences. With 5+ years in UX, UI, and brand design, she has worked with Harman International, Lloyds Banking, and AND Digital, bringing global perspective and empathy to every project. At OneCart, she leads design with vision and intention, turning bold ideas into beautifully executed solutions.',
   },
   {
     name: 'Dhananjay Sharma',
@@ -37,7 +37,7 @@ export const OUR_TEAM_SCHEMA = [
     link: '/our-team',
     image: '/images/dhan.png',
     description:
-      'Mobile engineer by day, adventurer by heart. Whether I’m scaling code or mountain trails, I live for the thrill of the challenge. From late-night debugging to last-minute backpacking trips, I believe life (and tech) is better when you push the limits. Building Onecart is my latest ride — and trust me, it’s one hell of an adventure. ',
+      'With 7+ years in mobile engineering, Dhananjay (“Dhan”) has built and scaled consumer apps at Jigsaw Dating and Mony Group. As Jigsaw’s first Android engineer, he laid the app’s technical foundation and boosted retention through product innovation. An adventurer at heart and problem-solver by trade, Dhan now drives OneCart’s technical vision, building a platform to transform how people shop.',
   },
   {
     name: 'Siddharth Bisht',
@@ -45,7 +45,7 @@ export const OUR_TEAM_SCHEMA = [
     link: '/',
     image: '/images/sid.png',
     description:
-      'Code crafter since 2017, shaping web & mobile experiences that are scalable, efficient, and impactful.MERN stack & React Native enthusiast with a knack for TypeScript, and building robust backends powered by Node.js & Express.AWS-savvy (S3, EC2, Lambda) and on an exciting journey into AI/ML & Deep Learning to bring intelligence into applications.',
+      'Siddharth is a full-stack developer with a strong expertise in MERN Stack. Sid has built a startup from the ground up. His startup, True Phonetic, enables easy understanding of a language using sound and images. He has also built multiple projects, including a wedding planning app and a B2B manufacturing app.',
   },
   {
     name: 'Swati Raut',
@@ -53,7 +53,7 @@ export const OUR_TEAM_SCHEMA = [
     link: '/',
     image: '/images/swati.png',
     description:
-      'I see design as a bridge between people and technology — a way to make digital experiences feel effortless, inclusive, and meaningful. My journey has been shaped by continuous growth: self-learning, embracing challenges, and adapting across roles and teams. I believe in design with intention — where every detail has meaning, and simplicity translates into understanding. Through that lens, I aim to craft digital experiences that are intuitive, refined, and deeply human. Beyond the screen, I draw inspiration from pottery, painting, embroidery, and travelling. Working with form, texture, and colours fuels my imagination and reminds me that creativity thrives at the intersection of beauty and function.',
+      'Swati sees design as a bridge between people and technology, creating digital experiences that are effortless, inclusive, and meaningful. She has designed for Lancaster University, QuickHeal, and projects spanning cybersecurity, AI, e-commerce, edtech, and game-based learning. Beyond work, she finds inspiration in pottery, painting, embroidery, and travel, blending creativity with function in everything she builds.',
   },
   {
     name: 'Misbah Khalid',
@@ -61,7 +61,7 @@ export const OUR_TEAM_SCHEMA = [
     link: '/our-team',
     image: '/images/misbah.png',
     description:
-      'I’m a Graphic and UI/UX Designer passionate about solving problems through design. With a strong eye for detail and a focus on user experience, I create designs that are not only visually engaging but also functional and intuitive. My goal is to bridge creativity with strategy—crafting solutions that help brands connect with their audience and make digital experiences seamless.',
+      'With over 5 years of design experience, Misbah brings fresh ideas and creative energy to the OneCart team. She has worked across branding, UI/UX, social media, and content creation, helping businesses stand out with visuals that truly connect. Fluent in Adobe Creative Suite and Figma, she thrives on turning concepts into designs that are both visually striking and functional. Passionate and detail-driven, Misbah is always exploring new ways to make digital experiences impactful.',
   },
   {
     name: 'Preethi Batchali',
@@ -69,7 +69,7 @@ export const OUR_TEAM_SCHEMA = [
     link: '/',
     image: '/images/preethi.png',
     description:
-      "Curious at heart, I design experiences that are purposeful, human-centered, and inclusive. With a background in both UI and UX, I enjoy crafting smooth flows and joyful interfaces that solve real user problems.Constantly evolving, I believe design is a journey of empathy, iteration, and impact.When I'm not wireframing or prototyping, you'll find me dancing, doodling, or exploring cultures through travel. ",
+      'Curious at heart, Preethi designs purposeful, human-centered, and inclusive experiences. With 3+ years in UI/UX at Softobiz and Infosys, she has led projects from user research to final design, turning complex problems into intuitive solutions. She thrives on crafting smooth flows and joyful interfaces that make technology feel effortless. Outside of work, she finds inspiration through dancing, doodling, and exploring cultures while traveling.',
   },
   {
     name: 'Asin Honore',
@@ -77,7 +77,7 @@ export const OUR_TEAM_SCHEMA = [
     link: '/our-story',
     image: '/images/asin.png',
     description:
-      "I'm Asin Honore, a dedicated full-stack web developer  and web scraper , focused on creating dynamic and efficient web applications.",
+      'Not your average developer, Asin specializes in building full-stack web applications, powerful web scrapers, and Chrome extensions that solve real problems. With expertise across frontend and backend, he creates scalable systems, automates complex workflows, and turns ideas into efficient products. He is also an active open-source contributor, with recognized contributions to Material UI, including being listed as a core contributor in the MUI v6.1.3 release. Passionate about clean code and practical solutions, he blends problem-solving with community impact to stay at the forefront of modern development.',
   },
   {
     name: 'Barisanem Fiiwe',
@@ -85,15 +85,15 @@ export const OUR_TEAM_SCHEMA = [
     link: '/our-team',
     image: '/images/barry.png',
     description:
-      "I'm a Front-End Developer skilled in React, Next.js, TypeScript, and Tailwind CSS. I build responsive, user-friendly web applications with a focus on clean architecture and performance. I also work with Cypress and Vitest to ensure robust test coverage and code reliability. I'm committed to continuous learning and staying up to date with modern web technologies.",
+      'A Front-End Developer with expertise in React, Next.js, TypeScript, and Tailwind CSS, Fiiwe is passionate about building fast, responsive, and user-friendly applications. He has contributed to impactful projects including WeDance (a global dance community app), Diacura (a diabetes health platform), and TJeg (a Nigerian fintech app), each driving measurable user growth and engagement. As a core frontend developer at iHealth and Wellness Foundation Inc. (USA), he built scalable healthcare solutions improving accessibility and patient experience. Beyond coding, he focuses on speed, performance of scalable products',
   },
   {
     name: 'Usama Ahmed',
-    role: 'Full-Stack Developer ',
+    role: 'Mobile App Lead ',
     link: '/our-team',
     image: '/images/usama.png',
     description:
-      'Usama leads the development of Onecart’s mobile application, leveraging react native to deliver a seamless, high-performance shopping experience. With extensive full-stack expertise and a strong background in scalable architecture, he drives the design, implementation and optimisation of features that bring Onecart to users everywhere.',
+      'Usama leads the development of Onecart’s mobile application, leveraging react native to deliver a seamless, high-performance shopping experience. With extensive full-stack expertise and a strong background in scalable architecture, Usama has built many side projects in the past. Some of the notable ones are Connect, an AI-powered chat app, A modern crypto dashboard, Plantea an organic grocery app, and he has over 5+ years of experience building react native apps.',
   },
 ];
 // footer schema

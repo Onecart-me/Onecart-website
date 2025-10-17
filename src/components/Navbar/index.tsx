@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <section className='sticky px-4 top-0 z-50 pt-2 '>
-      <nav className=' border border-[#890D8B33] bg-[#FFF2FF80] rounded-xl py-2 px-5 md:px-10 '>
+      <nav className=' border border-[#890D8B33] bg-[#890D8B33] rounded-xl py-2 px-5 md:px-10 '>
         <div className='grid grid-flow-col justify-between gap-3 items-center'>
           <Image src='/onecart-logo.png' alt='logo' width={50} height={50} />
           <div className='md:block hidden'>
